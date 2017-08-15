@@ -542,23 +542,6 @@ void MainWindow::on_resetButton_clicked()
 {
 
 }
-
-void MainWindow::on_x6Button_clicked()
-{
-    OutputData.ControlWord |= 0x0006;
-    OutputData.NegTorLim = 100;
-    OutputData.PosTorLim = 100;
-}
-
-void MainWindow::on_x7Button_clicked()
-{
-    OutputData.ControlWord |= 0x0007;
-}
-
-void MainWindow::on_xfButton_clicked()
-{
-    OutputData.ControlWord |= 0x000f;
-}
 void MainWindow::on_forwardButton_pressed()
 {
    // TargetPosi += 1000;
@@ -567,4 +550,10 @@ void MainWindow::on_forwardButton_pressed()
 void MainWindow::on_reverseButton_pressed()
 {
     //TargetPosi -= 100000;
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+     initxmll = new initxml(this);
+     initxmll->show();
 }

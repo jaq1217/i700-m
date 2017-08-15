@@ -1,0 +1,2626 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<EtherCATMailbox xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CoE>
+        <InitCmds>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Synchronisation: Error threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>4337</Index>
+                <SubIndex>2</SubIndex>
+                <Data>14000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Device: Name]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>8193</Index>
+                <SubIndex>0</SubIndex>
+                <Data>4D7920446576696365</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Touch probe (TP): Debounce time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>9472</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Internal object (TP option)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>9473</Index>
+                <SubIndex>0</SubIndex>
+                <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Mains: Rated voltage]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>9536</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Undervoltage (LU): Warning threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>9536</Index>
+                <SubIndex>2</SubIndex>
+                <Data>2C01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Overvoltage (OU): Warning threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>9536</Index>
+                <SubIndex>5</SubIndex>
+                <Data>1B03</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Brake: Operating mode]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10272</Index>
+                <SubIndex>1</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Brake: Application time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10272</Index>
+                <SubIndex>2</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Brake: Release time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10272</Index>
+                <SubIndex>3</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Brake: Control logic]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10272</Index>
+                <SubIndex>5</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Brake monitoring: Response]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10272</Index>
+                <SubIndex>6</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Device control via PDO: Activation]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10276</Index>
+                <SubIndex>0</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Mode: Selection]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10277</Index>
+                <SubIndex>0</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Quick stop: Duration in case of trouble]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10278</Index>
+                <SubIndex>0</SubIndex>
+                <Data>04000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Manual jog: Ramp time - current]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10294</Index>
+                <SubIndex>3</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Manual jog: Ramp time - frequency]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10294</Index>
+                <SubIndex>4</SubIndex>
+                <Data>F401</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Manual jog: Time monitoring]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10294</Index>
+                <SubIndex>5</SubIndex>
+                <Data>C4090000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Manual jog: Current controller - gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10294</Index>
+                <SubIndex>6</SubIndex>
+                <Data>4C130000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Manual jog: Current controller - reset time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10294</Index>
+                <SubIndex>7</SubIndex>
+                <Data>A1000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[PRBS excitation: cycle time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10336</Index>
+                <SubIndex>1</SubIndex>
+                <Data>E803</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[PRBS excitation: amplitude]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10336</Index>
+                <SubIndex>2</SubIndex>
+                <Data>3200</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Speed controller: Gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10496</Index>
+                <SubIndex>1</SubIndex>
+                <Data>4D010000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Speed controller: Reset time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10496</Index>
+                <SubIndex>2</SubIndex>
+                <Data>B000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Speed controller: Rate time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10496</Index>
+                <SubIndex>3</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Speed controller: Gain - adaptation]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10497</Index>
+                <SubIndex>0</SubIndex>
+                <Data>1027</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Speed controller: I component load value]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10498</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Speed: Speed setpoint - filter time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10499</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Speed: Actual speed - filter time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10500</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0600</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Moment of inertia: Motor]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10512</Index>
+                <SubIndex>1</SubIndex>
+                <Data>AC000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Moment of inertia: Load]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10512</Index>
+                <SubIndex>2</SubIndex>
+                <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Moment of inertia: Motor-load coupling ]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10512</Index>
+                <SubIndex>3</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Switching frequency]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10553</Index>
+                <SubIndex>0</SubIndex>
+                <Data>02</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Current controller: Feedforward control]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10561</Index>
+                <SubIndex>0</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Current controller: Gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10562</Index>
+                <SubIndex>1</SubIndex>
+                <Data>4C130000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Current controller: Reset time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10562</Index>
+                <SubIndex>2</SubIndex>
+                <Data>A1000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Current setpoint - filter time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10563</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Notch filter 1: Frequency]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10564</Index>
+                <SubIndex>1</SubIndex>
+                <Data>D007</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Notch filter 1: Bandwidth]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10564</Index>
+                <SubIndex>2</SubIndex>
+                <Data>C800</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Notch filter 1: Damping]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10564</Index>
+                <SubIndex>3</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Notch filter 2: Frequency]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10564</Index>
+                <SubIndex>4</SubIndex>
+                <Data>A00F</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Notch filter 2: Bandwidth]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10564</Index>
+                <SubIndex>5</SubIndex>
+                <Data>9001</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Notch filter 2: Damping]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10564</Index>
+                <SubIndex>6</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Torque: Jerk limitation setpoint]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10565</Index>
+                <SubIndex>0</SubIndex>
+                <Data>A00F</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Speed limitation: Upper speed limit]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10566</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Speed limitation: Lower speed limit]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10566</Index>
+                <SubIndex>2</SubIndex>
+                <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y1 = U01 (x = 0.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>1</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y2 = U02 (x = 6.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>2</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y3 = U03 (x = 12.50 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>3</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y4 = U04 (x = 18.75 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>4</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y5 = U05 (x = 25.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>5</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y6 = U06 (x = 31.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>6</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y7 = U07 (x = 37.50 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>7</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y8 = U08 (x = 42.75 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>8</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y9 = U09 (x = 50.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>9</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y10 = U10 (x = 56.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>10</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y11 = U11 (x = 62.50 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>11</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y12 = U12 (x = 68.75 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>12</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y13 = U13 (x = 75.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>13</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y14 = U14 (x = 81.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>14</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y15 = U15 (x = 87.50 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>15</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y16 = U16 (x = 93.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>16</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[IC: y17 = U17 (x = 100.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10567</Index>
+                <SubIndex>17</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Position controller: Gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10624</Index>
+                <SubIndex>0</SubIndex>
+                <Data>180B0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Position controller: Gain - adaption]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10625</Index>
+                <SubIndex>0</SubIndex>
+                <Data>1027</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Position controller: Output signal limitation]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10626</Index>
+                <SubIndex>0</SubIndex>
+                <Data>FFFFFF7F</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Position: Select new actual position]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10627</Index>
+                <SubIndex>0</SubIndex>
+                <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Determine target position: Mode]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10628</Index>
+                <SubIndex>0</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Field controller: Gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10688</Index>
+                <SubIndex>1</SubIndex>
+                <Data>C8400000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Field controller: Reset time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10688</Index>
+                <SubIndex>2</SubIndex>
+                <Data>9700</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Field weakening controller: Gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10720</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Field weakening controller: Reset time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10720</Index>
+                <SubIndex>2</SubIndex>
+                <Data>204E0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Field set value limitation]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10721</Index>
+                <SubIndex>0</SubIndex>
+                <Data>1027</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[DC link circuit voltage: Filter time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10722</Index>
+                <SubIndex>0</SubIndex>
+                <Data>FA00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor voltage act. value: Filter time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10723</Index>
+                <SubIndex>0</SubIndex>
+                <Data>FA00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Voltage reserve range]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>10724</Index>
+                <SubIndex>0</SubIndex>
+                <Data>05</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: V/f characteristic - shape]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11008</Index>
+                <SubIndex>0</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: V/f characteristic - voltage at reference point]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11009</Index>
+                <SubIndex>1</SubIndex>
+                <Data>5E01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: V/f characteristic - frequency at reference point]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11009</Index>
+                <SubIndex>2</SubIndex>
+                <Data>9600</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: x1 = f01]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11010</Index>
+                <SubIndex>1</SubIndex>
+                <Data>CEFF</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: x2 = f02]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11010</Index>
+                <SubIndex>2</SubIndex>
+                <Data>D8FF</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: x3 = f03]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11010</Index>
+                <SubIndex>3</SubIndex>
+                <Data>E2FF</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: x4 = f04]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11010</Index>
+                <SubIndex>4</SubIndex>
+                <Data>ECFF</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: x5 = f05]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11010</Index>
+                <SubIndex>5</SubIndex>
+                <Data>F6FF</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: x6 = f06]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11010</Index>
+                <SubIndex>6</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: x7 = f07]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11010</Index>
+                <SubIndex>7</SubIndex>
+                <Data>0A00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: x8 = f08]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11010</Index>
+                <SubIndex>8</SubIndex>
+                <Data>1400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: x9 = f09]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11010</Index>
+                <SubIndex>9</SubIndex>
+                <Data>1E00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: x10 = f10]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11010</Index>
+                <SubIndex>10</SubIndex>
+                <Data>2800</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: x11 = f11]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11010</Index>
+                <SubIndex>11</SubIndex>
+                <Data>3200</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: y1 = U01 (x = f01)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11011</Index>
+                <SubIndex>1</SubIndex>
+                <Data>409C0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: y2 = U02 (x = f02)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11011</Index>
+                <SubIndex>2</SubIndex>
+                <Data>007D0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: y3 = U03 (x = f03)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11011</Index>
+                <SubIndex>3</SubIndex>
+                <Data>C05D0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: y4 = U04 (x = f04)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11011</Index>
+                <SubIndex>4</SubIndex>
+                <Data>803E0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: y5 = U05 (x = f05)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11011</Index>
+                <SubIndex>5</SubIndex>
+                <Data>401F0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: y6 = U06 (x = f06)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11011</Index>
+                <SubIndex>6</SubIndex>
+                <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: y7 = U07 (x = f07)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11011</Index>
+                <SubIndex>7</SubIndex>
+                <Data>401F0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: y8 = U08 (x = f08)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11011</Index>
+                <SubIndex>8</SubIndex>
+                <Data>803E0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: y9 = U09 (x = f09)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11011</Index>
+                <SubIndex>9</SubIndex>
+                <Data>C05D0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: y10 = U10 (x = f10)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11011</Index>
+                <SubIndex>10</SubIndex>
+                <Data>007D0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[V/f: y11 = U11 (x = f11)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11011</Index>
+                <SubIndex>11</SubIndex>
+                <Data>409C0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Voltage vector control - current setpoint]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11012</Index>
+                <SubIndex>0</SubIndex>
+                <Data>41000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Voltage vector controller - gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11013</Index>
+                <SubIndex>1</SubIndex>
+                <Data>4C130000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Voltage vector controller - reset time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11013</Index>
+                <SubIndex>2</SubIndex>
+                <Data>A1000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Voltage boost]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11014</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Load adjustment - direction of rotation]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11015</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Load adjustment - value]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11015</Index>
+                <SubIndex>2</SubIndex>
+                <Data>D0070000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Imax controller - gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11016</Index>
+                <SubIndex>1</SubIndex>
+                <Data>01000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Imax controller - reset time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11016</Index>
+                <SubIndex>2</SubIndex>
+                <Data>E8030000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Slip compensation - influence]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11017</Index>
+                <SubIndex>1</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Slip compensation - filter time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11017</Index>
+                <SubIndex>2</SubIndex>
+                <Data>D007</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Oscillation damping - gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11018</Index>
+                <SubIndex>1</SubIndex>
+                <Data>1400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Oscillation damping - filter time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11018</Index>
+                <SubIndex>2</SubIndex>
+                <Data>0500</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Oscillation damping - limitation]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11018</Index>
+                <SubIndex>3</SubIndex>
+                <Data>0200</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Oscillation damping - ramp-end frequency]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11018</Index>
+                <SubIndex>4</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[VFC: Override point of field weakening]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11020</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[DC-injection braking: Current]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11136</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Legacy object - do not use]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11137</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Legacy object - do not use]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11138</Index>
+                <SubIndex>0</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Flying restart: Activate]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11168</Index>
+                <SubIndex>0</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Flying restart: Current]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11169</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0F00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Flying restart: Start frequency]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11170</Index>
+                <SubIndex>0</SubIndex>
+                <Data>C800</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Flying restart: Integration time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11171</Index>
+                <SubIndex>0</SubIndex>
+                <Data>5802</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Flying restart: Min. deviation]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11172</Index>
+                <SubIndex>0</SubIndex>
+                <Data>F401</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Flying restart: Delay time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11173</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor control]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11264</Index>
+                <SubIndex>0</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Stator resistance]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11265</Index>
+                <SubIndex>2</SubIndex>
+                <Data>E09F0200</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Stator leakage inductance]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11265</Index>
+                <SubIndex>3</SubIndex>
+                <Data>5C8F0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Rated speed]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11265</Index>
+                <SubIndex>4</SubIndex>
+                <Data>D007</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Rated frequency]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11265</Index>
+                <SubIndex>5</SubIndex>
+                <Data>3205</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Rated power]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11265</Index>
+                <SubIndex>6</SubIndex>
+                <Data>4300</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Rated voltage]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11265</Index>
+                <SubIndex>7</SubIndex>
+                <Data>2101</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Rated cosine phi]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11265</Index>
+                <SubIndex>8</SubIndex>
+                <Data>6200</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Insulation class]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11265</Index>
+                <SubIndex>9</SubIndex>
+                <Data>04</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Designation]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11265</Index>
+                <SubIndex>10</SubIndex>
+                <Data>4D44534B533035362D32332D313530</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor (ASM): Rotor resistance]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11266</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor (ASM): Mutual inductance]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11266</Index>
+                <SubIndex>2</SubIndex>
+                <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor (ASM): Magnetising current]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11266</Index>
+                <SubIndex>3</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor (SM): e.m.f. constant (KELL)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11267</Index>
+                <SubIndex>1</SubIndex>
+                <Data>A2010000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor (SM): Pole position resolver]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11267</Index>
+                <SubIndex>2</SubIndex>
+                <Data>7CFC</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor (SM): Temperature coefficient - magnets (kTN)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11267</Index>
+                <SubIndex>3</SubIndex>
+                <Data>92FF</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor (SM): Pole position encoder]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11267</Index>
+                <SubIndex>4</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y1 = L01 (x = 0.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>1</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y2 = L02 (x = 6.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>2</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y3 = L03 (x = 12.50 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>3</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y4 = L04 (x = 18.75 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>4</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y5 = L05 (x = 25.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>5</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y6 = L06 (x = 31.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>6</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y7 = L07 (x = 37.50 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>7</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y8 = L08 (x = 42.75 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>8</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y9 = L09 (x = 50.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>9</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y10 = L10 (x = 56.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>10</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y11 = L11 (x = 62.50 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>11</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y12 = L12 (x = 68.75 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>12</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y13 = L13 (x = 75.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>13</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y14 = L14 (x = 81.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>14</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y15 = L15 (x = 87.50 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>15</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y16 = L16 (x = 93.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>16</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lss: y17 = L17 (x = 100.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>17</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Lss saturation characteristic - Activation]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11268</Index>
+                <SubIndex>18</SubIndex>
+                <Data>0100</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Lss saturation charcteristic - reference for current grid points (x)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11269</Index>
+                <SubIndex>0</SubIndex>
+                <Data>3800</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Magnet characteristic: x1 = i01/iN]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11270</Index>
+                <SubIndex>1</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Magnet characteristic: y1 = kT01/kTN]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11270</Index>
+                <SubIndex>2</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Magnet characteristic: x2 = i02/iN]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11270</Index>
+                <SubIndex>3</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Magnet characteristic: y2 = kT02/kTN]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11270</Index>
+                <SubIndex>4</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Magnet characteristic: x3 = i03/iN]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11270</Index>
+                <SubIndex>5</SubIndex>
+                <Data>C800</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Magnet characteristic: y3 = kT03/kTN]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11270</Index>
+                <SubIndex>6</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Magnet characteristic: x4 = i04/iN]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11270</Index>
+                <SubIndex>7</SubIndex>
+                <Data>9F01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Magnet characteristic: y4 = kT04/kTN]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11270</Index>
+                <SubIndex>8</SubIndex>
+                <Data>4800</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y1 = L01 (x = 0.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>1</SubIndex>
+                <Data>7600</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y2 = L02 (x = 6.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>2</SubIndex>
+                <Data>7600</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y3 = L03 (x = 12.50 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>3</SubIndex>
+                <Data>7600</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y4 = L04 (x = 18.75 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>4</SubIndex>
+                <Data>7500</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y5 = L05 (x = 25.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>5</SubIndex>
+                <Data>7400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y6 = L06 (x = 31.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>6</SubIndex>
+                <Data>7200</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y7 = L07 (x = 37.50 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>7</SubIndex>
+                <Data>6F00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y8 = L08 (x = 43.75 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>8</SubIndex>
+                <Data>6B00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y9 = L09 (x = 50.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>9</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y10 = L10 (x = 56.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>10</SubIndex>
+                <Data>5D00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y11 = L11 (x = 62.50 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>11</SubIndex>
+                <Data>5600</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y12 = L12 (x = 68.75 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>12</SubIndex>
+                <Data>4E00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y13 = L13 (x = 75.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>13</SubIndex>
+                <Data>4700</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y14 = L14 (x = 81.25 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>14</SubIndex>
+                <Data>4000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y15 = L15 (x = 87.50 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>15</SubIndex>
+                <Data>3900</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y16 = L16 (x = 93.75 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>16</SubIndex>
+                <Data>3200</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lh: y17 = L17 (x = 100.00 %)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11271</Index>
+                <SubIndex>17</SubIndex>
+                <Data>2A00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor: Motor parameter setting method]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11272</Index>
+                <SubIndex>0</SubIndex>
+                <Data>03</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[HF amplitude]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11280</Index>
+                <SubIndex>1</SubIndex>
+                <Data>F401</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Angle tracking controller: Gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11280</Index>
+                <SubIndex>2</SubIndex>
+                <Data>401F</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Angle tracking controller: Reset time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11280</Index>
+                <SubIndex>3</SubIndex>
+                <Data>F401</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Static compensation: Angle]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11280</Index>
+                <SubIndex>4</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Dynamic compensation: Angle 1]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11280</Index>
+                <SubIndex>5</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Dynamic compensation: Angle 2]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11280</Index>
+                <SubIndex>6</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Filter time constant]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11280</Index>
+                <SubIndex>7</SubIndex>
+                <Data>0500</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Lower limt "high speed range"]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11281</Index>
+                <SubIndex>1</SubIndex>
+                <Data>1400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Angle tracking controller: Gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11281</Index>
+                <SubIndex>2</SubIndex>
+                <Data>FA00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Angle tracking controller: Reset time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11281</Index>
+                <SubIndex>3</SubIndex>
+                <Data>4A01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Sensorless synchronous control: Decoupling time - speed range]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11281</Index>
+                <SubIndex>4</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Encoder: Type]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11328</Index>
+                <SubIndex>0</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Hiperface: User def. encoder - type code]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11329</Index>
+                <SubIndex>2</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Hiperface: User def. encoder - specifiable revolutions]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11329</Index>
+                <SubIndex>3</SubIndex>
+                <Data>0100</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Hiperface absolute value fault: Response]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11329</Index>
+                <SubIndex>4</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Encoder: Increments / revolution]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11330</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00040000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Encoder: Supply voltage]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11330</Index>
+                <SubIndex>2</SubIndex>
+                <Data>32</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Resolver: Number of pole pairs]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11331</Index>
+                <SubIndex>0</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Resolver error compensation: Angle]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11332</Index>
+                <SubIndex>1</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Resolver error compensation: Cosine track gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11332</Index>
+                <SubIndex>2</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Resolver error compensation: Sine track gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11332</Index>
+                <SubIndex>3</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Feedback system: Response to open circuit]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11333</Index>
+                <SubIndex>0</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Feedback system: Open circuit detection sensitivity ]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11335</Index>
+                <SubIndex>0</SubIndex>
+                <Data>64</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Monitoring pole position identification: Response]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11360</Index>
+                <SubIndex>0</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[PPI (360°): Current amplitude]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11361</Index>
+                <SubIndex>1</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[PPI (360°): Ramp time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11361</Index>
+                <SubIndex>2</SubIndex>
+                <Data>2800</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[PPI (360°): Direction of rotation]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11361</Index>
+                <SubIndex>3</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[PPI (360°): Error tolerance]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11361</Index>
+                <SubIndex>4</SubIndex>
+                <Data>14</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[PPI (min. movement): Current amplitude]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11362</Index>
+                <SubIndex>1</SubIndex>
+                <Data>1900</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[PPI (min. movement): Ramp time - current]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11362</Index>
+                <SubIndex>2</SubIndex>
+                <Data>0A00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[PPI (min. movement): Gain]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11362</Index>
+                <SubIndex>3</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[PPI (min. movement): Reset time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11362</Index>
+                <SubIndex>4</SubIndex>
+                <Data>7102</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[PPI (min. movement): Max. move permitted]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11362</Index>
+                <SubIndex>5</SubIndex>
+                <Data>14</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Behaviour after switch-on]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11363</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Dead time compensation: TP1 dead time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11520</Index>
+                <SubIndex>1</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Dead time compensation: TP2 dead time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11520</Index>
+                <SubIndex>2</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Power stage utilisation (Ixt): Warning threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11584</Index>
+                <SubIndex>2</SubIndex>
+                <Data>5F00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Device utilisation (Ixt): Warning threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11584</Index>
+                <SubIndex>5</SubIndex>
+                <Data>5F00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor speed monitoring: Threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11588</Index>
+                <SubIndex>1</SubIndex>
+                <Data>7C15</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor speed monitoring: Response]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11588</Index>
+                <SubIndex>2</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor phase failure 1: Response]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11589</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor phase failure 1: Current threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11589</Index>
+                <SubIndex>2</SubIndex>
+                <Data>32</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor phase failure 1: Voltage threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11589</Index>
+                <SubIndex>3</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor phase failure 2: Response]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11589</Index>
+                <SubIndex>4</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Ultimate motor current: Threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11590</Index>
+                <SubIndex>1</SubIndex>
+                <Data>3800</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Ultimate motor current: Response]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11590</Index>
+                <SubIndex>2</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor temperature monitoring: Sensor type]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11593</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor temperature monitoring: Response]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11593</Index>
+                <SubIndex>2</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor temperature monitoring: Warning threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11593</Index>
+                <SubIndex>3</SubIndex>
+                <Data>AA05</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor temperature monitoring: Error threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11593</Index>
+                <SubIndex>4</SubIndex>
+                <Data>0E06</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Thermal sensor characteristic: Grid point 1 - temperature]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11593</Index>
+                <SubIndex>6</SubIndex>
+                <Data>FA00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Thermal sensor characteristic: Grid point 2 - temperature]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11593</Index>
+                <SubIndex>7</SubIndex>
+                <Data>DC05</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Spec. charact.: resistance sampling point 1]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11593</Index>
+                <SubIndex>8</SubIndex>
+                <Data>E803</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Spec. charact.: resistance sampling point 2]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11593</Index>
+                <SubIndex>9</SubIndex>
+                <Data>B108</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor utilisation (I²xt): Thermal time constant - winding]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11596</Index>
+                <SubIndex>1</SubIndex>
+                <Data>5A00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor utilisation (I²xt): Thermal time constant - laminations]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11596</Index>
+                <SubIndex>2</SubIndex>
+                <Data>B607</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor utilisation (I²xt): Influence of the winding]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11596</Index>
+                <SubIndex>3</SubIndex>
+                <Data>1B</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor utilisation (I²xt): Starting value]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11596</Index>
+                <SubIndex>4</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[I²xt: x1 = n01/nN (n01 ~ 0)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11597</Index>
+                <SubIndex>1</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[I²xt: y1 = i01/iN (x = n01 ~ 0)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11597</Index>
+                <SubIndex>2</SubIndex>
+                <Data>6000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[I²xt: x2 = n02/nN (n02 = limit - reduced cooling)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11597</Index>
+                <SubIndex>3</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[I²xt: y2 = i02/iN (x = n02 = limit - reduced cooling)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11597</Index>
+                <SubIndex>4</SubIndex>
+                <Data>6000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[I²xt: x3 = n03/nN (n03 = rated speed)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11597</Index>
+                <SubIndex>5</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[I²xt: y3 = i03/iN (x = n03 = rated speed)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11597</Index>
+                <SubIndex>6</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[I²xt: x4 = n04/nN (n04 = limit - field weakening)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11597</Index>
+                <SubIndex>7</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[I²xt: y4 = i04/iN (x = n04 = limit - field weakening)]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11597</Index>
+                <SubIndex>8</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor utilisation (I²xt): Motor overload warning threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11598</Index>
+                <SubIndex>0</SubIndex>
+                <Data>6400</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor utilisation (I²xt): Response ]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11600</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor utilisation (I²xt): Error threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11600</Index>
+                <SubIndex>2</SubIndex>
+                <Data>6900</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Heatsink temperature: Warning threshold]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11652</Index>
+                <SubIndex>2</SubIndex>
+                <Data>2003</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Heatsink temperature: Threshold - switch-on fan]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11652</Index>
+                <SubIndex>3</SubIndex>
+                <Data>2602</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Heatsink temperature: Threshold - switch-off fan]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11652</Index>
+                <SubIndex>4</SubIndex>
+                <Data>C201</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Torque: 4/16 kHz interpolation]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>11744</Index>
+                <SubIndex>5</SubIndex>
+                <Data>01</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Delta speed]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24648</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Delta time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24648</Index>
+                <SubIndex>2</SubIndex>
+                <Data>0A00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Delta speed]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24649</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Delta time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24649</Index>
+                <SubIndex>2</SubIndex>
+                <Data>0A00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Quick stop option code]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24666</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0200</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Fault reaction option code]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24670</Index>
+                <SubIndex>0</SubIndex>
+                <Data>FEFF</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Modes of operation]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24672</Index>
+                <SubIndex>0</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Following error window]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24677</Index>
+                <SubIndex>0</SubIndex>
+                <Data>E8030000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Following error time out]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24678</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Position window]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24679</Index>
+                <SubIndex>0</SubIndex>
+                <Data>E8030000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Position window time]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24680</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Max torque]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24690</Index>
+                <SubIndex>0</SubIndex>
+                <Data>C409</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Max current]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24691</Index>
+                <SubIndex>0</SubIndex>
+                <Data>DC05</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor rated current]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24693</Index>
+                <SubIndex>0</SubIndex>
+                <Data>9A060000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor rated torque]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24694</Index>
+                <SubIndex>0</SubIndex>
+                <Data>800C0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Polarity]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24702</Index>
+                <SubIndex>0</SubIndex>
+                <Data>00</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Max motor speed]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24704</Index>
+                <SubIndex>0</SubIndex>
+                <Data>94110000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Quick stop deceleration]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24709</Index>
+                <SubIndex>0</SubIndex>
+                <Data>FFFFFF7F</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Encoder increments]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24719</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00000100</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor revolutions]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24719</Index>
+                <SubIndex>2</SubIndex>
+                <Data>01000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Incr./s]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24720</Index>
+                <SubIndex>1</SubIndex>
+                <Data>00000002</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor revolutions/s]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24720</Index>
+                <SubIndex>2</SubIndex>
+                <Data>7D000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Velocity offset]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24753</Index>
+                <SubIndex>0</SubIndex>
+                <Data>00000000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Torque offset]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24754</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Touch probe function]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24760</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Interpolation sub mode select]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24768</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Interpolation time period]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24770</Index>
+                <SubIndex>1</SubIndex>
+                <Data>02</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Interpolation time index]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24770</Index>
+                <SubIndex>2</SubIndex>
+                <Data>FD</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Positive torque limit value]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24800</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Negative torque limit value]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>24801</Index>
+                <SubIndex>0</SubIndex>
+                <Data>0000</Data>
+            </InitCmd>
+            <InitCmd>
+                <Transition>PS</Transition>
+                <Comment><![CDATA[Motor manufacturer]]></Comment>
+                <Timeout>0</Timeout>
+                <Ccs>1</Ccs>
+                <Index>25604</Index>
+                <SubIndex>0</SubIndex>
+                <Data>4C656E7A65</Data>
+            </InitCmd>
+        </InitCmds>
+    </CoE>
+</EtherCATMailbox>

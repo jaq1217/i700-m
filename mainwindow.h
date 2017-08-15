@@ -6,7 +6,7 @@
 
 #include <QTimer>
 #include <pthread.h>
-
+#include "initxml.h"
 namespace Ui {
 class MainWindow;
 }
@@ -18,7 +18,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
+    initxml *initxmll;
     char IOmap[4096];
 
 private slots:
@@ -52,15 +52,11 @@ private slots:
 
     void on_resetButton_clicked();
 
-    void on_x6Button_clicked();
-
-    void on_x7Button_clicked();
-
-    void on_xfButton_clicked();
-
     void on_forwardButton_pressed();
 
     void on_reverseButton_pressed();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
                                   QT += network
@@ -37,7 +38,8 @@ SOURCES += \
     soem/ethercatfoe.c \
     soem/ethercatmain.c \
     soem/ethercatprint.c \
-    soem/ethercatsoe.c
+    soem/ethercatsoe.c \
+    initxml.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -54,7 +56,9 @@ HEADERS += \
     soem/ethercatmain.h \
     soem/ethercatprint.h \
     soem/ethercatsoe.h \
-    soem/ethercattype.h
+    soem/ethercattype.h \
+    initxml.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    initxml.ui
