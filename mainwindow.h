@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QNetworkInterface>
-
 #include <QTimer>
 #include <pthread.h>
 #include "initxml.h"
@@ -58,7 +57,6 @@ private slots:
 
     void on_cfgButton_clicked();
 
-    void on_SDO_read_clicked();
 
 private:
     Ui::MainWindow *ui;

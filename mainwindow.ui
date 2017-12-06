@@ -116,19 +116,6 @@
       <string>清除</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="SDO_read">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>80</y>
-       <width>80</width>
-       <height>26</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>SDO_Write</string>
-     </property>
-    </widget>
    </widget>
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
