@@ -56,7 +56,9 @@ private slots:
 
     void on_reverseButton_pressed();
 
-    void on_pushButton_clicked();
+    void on_cfgButton_clicked();
+
+    void on_SDO_read_clicked();
 
 private:
     Ui::MainWindow *ui;

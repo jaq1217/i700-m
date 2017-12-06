@@ -13,60 +13,53 @@ initxml::initxml(QWidget *parent) :
     int width = this->geometry().width();
     int height = this->geometry().height();
     this->setFixedSize(width,height);
-    QStandardItemModel* model = new QStandardItemModel(ui->treeView);
-    model->setHorizontalHeaderLabels(QStringList()<<QStringLiteral("Tag")<<QStringLiteral("Index")<<QStringLiteral("SubIndex")<<QStringLiteral("Data")<<QStringLiteral("Comment")<<QStringLiteral("Lenth"));
-    ui->treeView->setModel(model);
+    //QStandardItemModel* model = new QStandardItemModel(ui->treeView);
+    //model->setHorizontalHeaderLabels(QStringList()<<QStringLiteral("Tag")<<QStringLiteral("Index")<<QStringLiteral("SubIndex")<<QStringLiteral("Data")<<QStringLiteral("Comment")<<QStringLiteral("Lenth"));
+    //ui->treeView->setModel(model);
     QFile *file;
-    QString  filename = "single-jq.xml";
+    filename = "single-jq.xml";
 }
 
 initxml::~initxml()
 {
-    //delete xxml;
     delete ui;
 }
 
 void initxml::on_loadButton_clicked()
 {
     QString QStr = "";
-    if(read_xmll("single-jq.xml"))
+    if(read_xmll(filename))
     {
-        QStandardItemModel* model = new QStandardItemModel(ui->treeView);
+        //QStandardItemModel* model = new QStandardItemModel(ui->treeView);
+        model = new QStandardItemModel(ui->treeView);
         model->setHorizontalHeaderLabels(QStringList()<<QStringLiteral("Tag")<<QStringLiteral("Index")<<QStringLiteral("SubIndex")<<QStringLiteral("Data")<<QStringLiteral("Comment")<<QStringLiteral("Lenth"));
         ui->treeView->setModel(model);
 
 
-        QStandardItem* itemProject = new QStandardItem(QStringLiteral("InitCmds"));
+        //QStandardItem* itemProject = new QStandardItem(QStringLiteral("InitCmds"));
+        itemProject = new QStandardItem(QStringLiteral("InitCmds"));
         model->appendRow(itemProject);
         for(int tempi = 0; tempi < XmlDataNum; tempi++)
         {
             QStandardItem* itemChild = new QStandardItem(QStringLiteral(" "));
             itemProject->appendRow(itemChild);
 
-            itemProject->setChild(tempi,1,new QStandardItem(QString::number(xmlData[tempi].Index,10)));
+            itemProject->setChild(tempi,0,new QStandardItem(QString::number(tempi+1,10)));
+            itemProject->setChild(tempi,1,new QStandardItem(QString::number(xmlData[tempi].Index,16)));
             itemProject->setChild(tempi,2,new QStandardItem(QString::number(xmlData[tempi].SubIndex,10)));
 
             if(xmlData[tempi].IsChar)
             {
                 QStr = "";
 
-                //qDebug()<< xxml->xmlData[tempi].DataLenth;
                 for(uint8_t intj = 0; intj < xmlData[tempi].DataLenth;intj++)
                 {
                     QStr+=xmlData[tempi].DataStr[intj];
-                    //QStr+=QString::number(xxml->xmlData[tempi].DataStr[intj],16);
-                    //qDebug()<<QString::number(xxml->xmlData[tempi].DataStr[intj],16);
                 }
                 itemProject->setChild(tempi,3,new QStandardItem(QStr));
-                //qDebug()<<QStr;
             }
             else
             {
-                if(xmlData[tempi].Index == 24677)
-                {
-                    qDebug()<<"first"<<xmlData[tempi].DataInt;
-                }
-                //itemProject->setChild(tempi,3,new QStandardItem(QString::number(xxml->xmlData[tempi].DataInt,16)));
                 itemProject->setChild(tempi,3,new QStandardItem(QString("%1").arg(xmlData[tempi].DataInt,xmlData[tempi].DataLenth * 2,16,QChar('0'))));
             }
             itemProject->setChild(tempi,4,new QStandardItem(xmlData[tempi].Comment));
@@ -160,11 +153,9 @@ int initxml::read_xmll(QString filename)
                                            {
                                                xmlData[XmlDataNum].DataStr[tempi] = QStrTemp.mid(2*tempi,2).toInt(0,16);
                                                DataStrLen++;
-                                               //qDebug()<<"first" <<QString::number(xmlData[XmlDataNum].DataStr[tempi],16);
                                            }
                                            xmlData[XmlDataNum].DataLenth = DataStrLen;
                                            xmlData[XmlDataNum].IsChar = true;
-                                           //qDebug()<< XmlDataNum <<QStrTemp.length() << QStrTemp;
                                        }
                                        else
                                        {
@@ -172,11 +163,6 @@ int initxml::read_xmll(QString filename)
                                            xmlData[XmlDataNum].DataInt = QStrTemp.toUInt(0,16);
                                            xmlData[XmlDataNum].IsChar = false;
                                            xmlData[XmlDataNum].DataLenth = QStrTemp.length() / 2;//bype of number
-//                                           if(xmlData[XmlDataNum].Index == 24677)
-//                                           {
-//                                               qDebug()<<"QStrTemp"<<QStrTemp;
-//                                               qDebug()<<xmlData[XmlDataNum].DataInt.;
-//                                           }
                                        }
                                    }
 
@@ -195,4 +181,22 @@ int initxml::read_xmll(QString filename)
         CoEroot = CoEroot.nextSibling();
     }
     return 1;
+}
+
+void initxml::on_modifyButton_clicked()
+{
+    qDebug() << itemProject->rowCount();
+    for(int tempi = 0; tempi < 10; tempi++)
+    {
+        //qDebug() << itemProject->child(tempi);
+        qDebug() << itemProject;
+
+
+    }
+
+}
+
+void initxml::on_downloadButton_clicked()
+{
+
 }

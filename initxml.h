@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QString>
+#include <QStandardItem>
 
 namespace Ui {
 class initxml;
@@ -35,9 +36,16 @@ public:
     }XmlDataStruct;
     XmlDataStruct xmlData[300];//120
     int16_t XmlDataNum;
+    QString  filename;
+    QStandardItemModel* model;
+    QStandardItem* itemProject;
 
 private slots:
     void on_loadButton_clicked();
+
+    void on_modifyButton_clicked();
+
+    void on_downloadButton_clicked();
 
 private:
     Ui::initxml *ui;
