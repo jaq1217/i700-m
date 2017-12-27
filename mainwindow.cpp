@@ -54,311 +54,11 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_startButton_clicked()
 {
-
-    unsigned int SDODATA[1152]={
-    4337,2,0x14000000,4,
-    9472,0,0x0000,2,
-    9473,0,0x00000000,4,
-    9536,1,0x00,1,
-    9536,2,0x2C01,2,
-    9536,5,0x1B03,2,
-    10272,1,0x01,1,
-    10272,2,0x6400,2,
-    10272,3,0x6400,2,
-    10272,5,0x00,1,
-    10272,6,0x01,1,
-    10276,0,0x01,1,
-    10277,0,0x00,1,
-    10278,0,0x04000000,4,
-    10294,3,0x0000,2,
-    10294,4,0xF401,2,
-    10294,5,0xC4090000,4,
-    10294,6,0x4C130000,4,
-    10294,7,0xA1000000,4,
-    10336,1,0xE803,2,
-    10336,2,0x3200,2,
-    10496,1,0x4D010000,4,
-    10496,2,0xB000,2,
-    10496,3,0x0000,2,
-    10497,0,0x1027,2,
-    10498,0,0x0000,2,
-    10499,0,0x0000,2,
-    10500,0,0x0600,2,
-    10512,1,0xAC000000,4,
-    10512,2,0x00000000,4,
-    10512,3,0x00,1,
-    10553,0,0x02,1,
-    10561,0,0x00,1,
-    10562,1,0x4C130000,4,
-    10562,2,0xA1000000,4,
-    10563,0,0x0000,2,
-    10564,1,0xD007,2,
-    10564,2,0xC800,2,
-    10564,3,0x00,1,
-    10564,4,0xA00F,2,
-    10564,5,0x9001,2,
-    10564,6,0x00,1,
-    10565,0,0xA00F,2,
-    10566,1,0x00000000,4,
-    10566,2,0x00000000,4,
-    10567,1,0x0000,2,
-    10567,2,0x0000,2,
-    10567,3,0x0000,2,
-    10567,4,0x0000,2,
-    10567,5,0x0000,2,
-    10567,6,0x0000,2,
-    10567,7,0x0000,2,
-    10567,8,0x0000,2,
-    10567,9,0x0000,2,
-    10567,10,0x0000,2,
-    10567,11,0x0000,2,
-    10567,12,0x0000,2,
-    10567,13,0x0000,2,
-    10567,14,0x0000,2,
-    10567,15,0x0000,2,
-    10567,16,0x0000,2,
-    10567,17,0x0000,2,
-    10624,0,0x180B0000,4,
-    10625,0,0x1027,2,
-    10626,0,0xFFFFFF7F,4,
-    10627,0,0x00000000,4,
-    10628,0,0x00,1,
-    10688,1,0xC8400000,4,
-    10688,2,0x9700,2,
-    10720,1,0x00000000,4,
-    10720,2,0x204E0000,4,
-    10721,0,0x1027,2,
-    10722,0,0xFA00,2,
-    10723,0,0xFA00,2,
-    10724,0,0x05,1,
-    11008,0,0x00,1,
-    11009,1,0x5E01,2,
-    11009,2,0x9600,2,
-    11010,1,0xCEFF,2,
-    11010,2,0xD8FF,2,
-    11010,3,0xE2FF,2,
-    11010,4,0xECFF,2,
-    11010,5,0xF6FF,2,
-    11010,6,0x0000,2,
-    11010,7,0x0A00,2,
-    11010,8,0x1400,2,
-    11010,9,0x1E00,2,
-    11010,10,0x2800,2,
-    11010,11,0x3200,2,
-    11011,1,0x409C0000,4,
-    11011,2,0x007D0000,4,
-    11011,3,0xC05D0000,4,
-    11011,4,0x803E0000,4,
-    11011,5,0x401F0000,4,
-    11011,6,0x00000000,4,
-    11011,7,0x401F0000,4,
-    11011,8,0x803E0000,4,
-    11011,9,0xC05D0000,4,
-    11011,10,0x007D0000,4,
-    11011,11,0x409C0000,4,
-    11012,0,0x41000000,4,
-    11013,1,0x4C130000,4,
-    11013,2,0xA1000000,4,
-    11014,0,0x0000,2,
-    11015,1,0x00,1,
-    11015,2,0xD0070000,4,
-    11016,1,0x01000000,4,
-    11016,2,0xE8030000,4,
-    11017,1,0x0000,2,
-    11017,2,0xD007,2,
-    11018,1,0x1400,2,
-    11018,2,0x0500,2,
-    11018,3,0x0200,2,
-    11018,4,0x00,1,
-    11020,0,0x0000,2,
-    11136,0,0x0000,2,
-    11137,0,0x0000,2,
-    11138,0,0x00,1,
-    11168,0,0x00,1,
-    11169,0,0x0F00,2,
-    11170,0,0xC800,2,
-    11171,0,0x5802,2,
-    11172,0,0xF401,2,
-    11173,0,0x0000,2,
-    11264,0,0x01,1,
-    11265,2,0xE09F0200,4,
-    11265,3,0x5C8F0000,4,
-    11265,4,0xD007,2,
-    11265,5,0x3205,2,
-    11265,6,0x4300,2,
-    11265,7,0x2101,2,
-    11265,8,0x6200,2,
-    11265,9,0x04,1,
-    11266,1,0x00000000,4,
-    11266,2,0x00000000,4,
-    11266,3,0x0000,2,
-    11267,1,0xA2010000,4,
-    11267,2,0x7CFC,2,
-    11267,3,0x92FF,2,
-    11267,4,0x0000,2,
-    11268,1,0x6400,2,
-    11268,2,0x6400,2,
-    11268,3,0x6400,2,
-    11268,4,0x6400,2,
-    11268,5,0x6400,2,
-    11268,6,0x6400,2,
-    11268,7,0x6400,2,
-    11268,8,0x6400,2,
-    11268,9,0x6400,2,
-    11268,10,0x6400,2,
-    11268,11,0x6400,2,
-    11268,12,0x6400,2,
-    11268,13,0x6400,2,
-    11268,14,0x6400,2,
-    11268,15,0x6400,2,
-    11268,16,0x6400,2,
-    11268,17,0x6400,2,
-    11268,18,0x0100,2,
-    11269,0,0x3800,2,
-    11270,1,0x0000,2,
-    11270,2,0x6400,2,
-    11270,3,0x6400,2,
-    11270,4,0x6400,2,
-    11270,5,0xC800,2,
-    11270,6,0x6400,2,
-    11270,7,0x9F01,2,
-    11270,8,0x4800,2,
-    11271,1,0x7600,2,
-    11271,2,0x7600,2,
-    11271,3,0x7600,2,
-    11271,4,0x7500,2,
-    11271,5,0x7400,2,
-    11271,6,0x7200,2,
-    11271,7,0x6F00,2,
-    11271,8,0x6B00,2,
-    11271,9,0x6400,2,
-    11271,10,0x5D00,2,
-    11271,11,0x5600,2,
-    11271,12,0x4E00,2,
-    11271,13,0x4700,2,
-    11271,14,0x4000,2,
-    11271,15,0x3900,2,
-    11271,16,0x3200,2,
-    11271,17,0x2A00,2,
-    11272,0,0x03,1,
-    11280,1,0xF401,2,
-    11280,2,0x401F,2,
-    11280,3,0xF401,2,
-    11280,4,0x0000,2,
-    11280,5,0x0000,2,
-    11280,6,0x0000,2,
-    11280,7,0x0500,2,
-    11281,1,0x1400,2,
-    11281,2,0xFA00,2,
-    11281,3,0x4A01,2,
-    11281,4,0x0000,2,
-    11328,0,0x01,1,
-    11329,2,0x00,1,
-    11329,3,0x0100,2,
-    11329,4,0x01,1,
-    11330,1,0x00040000,4,
-    11330,2,0x32,1,
-    11331,0,0x01,1,
-    11332,1,0x0000,2,
-    11332,2,0x6400,2,
-    11332,3,0x6400,2,
-    11333,0,0x01,1,
-    11335,0,0x64,1,
-    11360,0,0x01,1,
-    11361,1,0x6400,2,
-    11361,2,0x2800,2,
-    11361,3,0x00,1,
-    11361,4,0x14,1,
-    11362,1,0x1900,2,
-    11362,2,0x0A00,2,
-    11362,3,0x0000,2,
-    11362,4,0x7102,2,
-    11362,5,0x14,1,
-    11363,1,0x00,1,
-    11520,1,0x0000,2,
-    11520,2,0x0000,2,
-    11584,2,0x5F00,2,
-    11584,5,0x5F00,2,
-    11588,1,0x7C15,2,
-    11588,2,0x01,1,
-    11589,1,0x00,1,
-    11589,2,0x32,1,
-    11589,3,0x6400,2,
-    11589,4,0x00,1,
-    11590,1,0x3800,2,
-    11590,2,0x01,1,
-    11593,1,0x00,1,
-    11593,2,0x01,1,
-    11593,3,0xAA05,2,
-    11593,4,0x0E06,2,
-    11593,6,0xFA00,2,
-    11593,7,0xDC05,2,
-    11593,8,0xE803,2,
-    11593,9,0xB108,2,
-    11596,1,0x5A00,2,
-    11596,2,0xB607,2,
-    11596,3,0x1B,1,
-    11596,4,0x0000,2,
-    11597,1,0x0000,2,
-    11597,2,0x6000,2,
-    11597,3,0x0000,2,
-    11597,4,0x6000,2,
-    11597,5,0x6400,2,
-    11597,6,0x6400,2,
-    11597,7,0x6400,2,
-    11597,8,0x6400,2,
-    11598,0,0x6400,2,
-    11600,1,0x00,1,
-    11600,2,0x6900,2,
-    11652,2,0x2003,2,
-    11652,3,0x2602,2,
-    11652,4,0xC201,2,
-    11744,5,0x01,1,
-    24648,1,0x00000000,4,
-    24648,2,0x0A00,2,
-    24649,1,0x00000000,4,
-    24649,2,0x0A00,2,
-    24666,0,0x0200,2,
-    24670,0,0xFEFF,2,
-    24672,0,0x00,1,
-    24677,0,0xE8030000,4,
-    24678,0,0x0000,2,
-    24679,0,0xE8030000,4,
-    24680,0,0x0000,2,
-    24690,0,0xC409,2,
-    24691,0,0xDC05,2,
-    24693,0,0x9A060000,4,
-    24694,0,0x800C0000,4,
-    24702,0,0x00,1,
-    24704,0,0x94110000,4,
-    24709,0,0xFFFFFF7F,4,
-    24719,1,0x00000100,4,
-    24719,2,0x01000000,4,
-    24720,1,0x00000002,4,
-    24720,2,0x7D000000,4,
-    24753,0,0x00000000,4,
-    24754,0,0x0000,2,
-    24760,0,0x0000,2,
-    24768,0,0x0000,2,
-    24770,1,0x02,1,
-    24770,2,0xFD,1,
-    24800,0,0x0000,2,
-    24801,0,0x0000,2
-    };
-
     int nSM,nFMMU;
     int Osize,Isize,PDOassign;
     int chk = 0;
-    int os;
-    int mos;
     int tempi;
-    int16 mod;
-    uint32 ob1;
-    int16 ob2;
-    uint8 ob3;
-    uint16 tempH,tempL;
-    uint32 tempHH,tempHL,tempLH,tempLL;
-    QString str,str2;
+    QString str;
     connect(timer0,SIGNAL(timeout()),this,SLOT(UpStatus()));
     if(ec_init("ens33"))
     {
@@ -368,77 +68,22 @@ void MainWindow::on_startButton_clicked()
 
             str.sprintf("%d slaves was found",ec_slavecount);
             ui->infoBrowser->append(str);
-            /////////////
-            //clear
-            os=sizeof(ob3); ob3 = 0;
-            ec_SDOwrite(1,0x1c12,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
-            os=sizeof(ob3); ob3 = 0;
-            ec_SDOwrite(1,0x1c13,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
-            os=sizeof(ob3); ob3 = 0;
-            ec_SDOwrite(1,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
-            //config
-            os=sizeof(ob1); ob1 = 0x28330010;
-            ec_SDOwrite(1,0x1a06,01,FALSE,os,&ob1,EC_TIMEOUTRXM);
-            os=sizeof(ob1); ob1 = 0x60fd0020;
-            ec_SDOwrite(1,0x1a06,02,FALSE,os,&ob1,EC_TIMEOUTRXM);
-            os=sizeof(ob3); ob3 = 0x02;
-            ec_SDOwrite(1,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
-            os=sizeof(ob2); ob2 = 0x1600;
-            ec_SDOwrite(1,0x1c12,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob2); ob2 = 0x1604;
-            ec_SDOwrite(1,0x1c12,02,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob2); ob2 = 0x1606;
-            ec_SDOwrite(1,0x1c12,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob2); ob2 = 0x1607;
-            ec_SDOwrite(1,0x1c12,04,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob3); ob3 = 0x04;
-            ec_SDOwrite(1,0x1c12,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
-            os=sizeof(ob2); ob2 = 0x1a00;
-            ec_SDOwrite(1,0x1c13,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob2); ob2 = 0x1a04;
-            ec_SDOwrite(1,0x1c13,02,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob2); ob2 = 0x1a06;
-            ec_SDOwrite(1,0x1c13,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob3); ob3 = 0x03;
-            ec_SDOwrite(1,0x1c13,00,FALSE,os,&ob2,EC_TIMEOUTRXM);
-           //    4337,2,0x14000000,4,
-            for(tempi=0;tempi<288;tempi++)
+
+            for(tempi = 1;tempi < ec_slavecount+1;tempi ++)
             {
-                if(SDODATA[tempi*4+3] == 4)
+                if(ec_slave[tempi].eep_id == SINGLE_CODE)
                 {
-                    tempHH = (SDODATA[tempi*4+2] & 0x000000ff) << 24;
-                    tempHL = (SDODATA[tempi*4+2] & 0x0000ff00) << 8;
-                    tempLH = (SDODATA[tempi*4+2] & 0x00ff0000) >> 8 ;
-                    tempLL = (SDODATA[tempi*4+2] & 0xff000000) >> 24;
-                    SDODATA[tempi*4+2] = tempHH | tempHL | tempLH | tempLL;
-                    os=sizeof(ob1); ob1 = SDODATA[tempi*4+2];
-                    ec_SDOwrite(1,SDODATA[tempi*4],SDODATA[tempi*4+1],FALSE,os,&ob1,4*EC_TIMEOUTRXM);
+                    Single_SDOWrite(tempi);
                 }
-                else if(SDODATA[tempi*4+3] == 2)
+                else if(ec_slave[tempi].eep_id == DOUBLE_CODE)
                 {
-                    tempH = (SDODATA[tempi*4+2] & 0x00ff) << 8;
-                    tempL = (SDODATA[tempi*4+2] & 0xff00) >> 8;
-                    SDODATA[tempi*4+2] = tempH | tempL;
-                    os=sizeof(ob2); ob2 = SDODATA[tempi*4+2];
-                    ec_SDOwrite(1,SDODATA[tempi*4],SDODATA[tempi*4+1],FALSE,os,&ob2,4*EC_TIMEOUTRXM);
-                }
-                else if(SDODATA[tempi*4+3] == 1)
-                {
-                    os=sizeof(ob3); ob3 = SDODATA[tempi*4+2];
-                    ec_SDOwrite(1,SDODATA[tempi*4],SDODATA[tempi*4+1],FALSE,os,&ob3,4*EC_TIMEOUTRXM);
-                }
-                else
-                {
-                    //nothing
+                    Double_SDOWrite(tempi);
                 }
             }
-            ///////////////////
+
+
             ec_config_map(&IOmap);
             ec_configdc();
-
-            //sdo resqust
-
-
 
             str.sprintf("Name:%s",ec_slave[1].name);
             ui->infoBrowser->append(str);
@@ -507,56 +152,6 @@ void MainWindow::on_startButton_clicked()
                 str.sprintf("////////////OP State///////////////");
                 ui->infoBrowser->append(str);
                 SendPdo = true;
-                /*read sdo  motor param
-                mos=sizeof(mod);
-                ec_SDOread(1, 0x1c12, 02,FALSE, &mos,&mod, EC_TIMEOUTRXM);
-                str.sprintf("0x1c12.02:%x",mod);
-                ui->infoBrowser->append(str);
-                ec_SDOread(1, 0x1c13, 02,FALSE, &mos,&mod, EC_TIMEOUTRXM);
-                str.sprintf("0x1c13.02:%x",mod);
-                ui->infoBrowser->append(str);
-                os=sizeof(ob2);
-                ec_SDOread(1, 0x6072, 00,FALSE, &os,&ob2, EC_TIMEOUTRXM);
-                str.sprintf("0x6072.0:%x",ob2);
-                ui->infoBrowser->append(str);
-
-                os=sizeof(ob3);
-                ec_SDOread(1, 0x2d49, 02,FALSE, &os,&ob3, EC_TIMEOUTRXM);
-                str.sprintf("0x2d49.2:%d",ob3);
-                ui->infoBrowser->append(str);
-                os=sizeof(ob2);
-                ec_SDOread(1, 0x2d49, 03,FALSE, &os,&ob2, EC_TIMEOUTRXM);
-                str.sprintf("0x2d49.3:%d",ob2);
-                ui->infoBrowser->append(str);
-                os=sizeof(ob2);
-                ec_SDOread(1, 0x2d49, 04,FALSE, &os,&ob2, EC_TIMEOUTRXM);
-                str.sprintf("0x2d49.4:%d",ob2);
-                ui->infoBrowser->append(str);
-                os=sizeof(ob1); ob1 = 0x28330010;
-                ec_SDOwrite(1,0x1a06,01,FALSE,os,&ob1,EC_TIMEOUTRXM);
-                os=sizeof(ob1); ob1 = 0x60fd0020;
-                ec_SDOwrite(1,0x1a06,02,FALSE,os,&ob1,EC_TIMEOUTRXM);
-                os=sizeof(ob3); ob3 = 0x02;
-                ec_SDOwrite(1,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1600;
-                ec_SDOwrite(1,0x1c12,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1604;
-                ec_SDOwrite(1,0x1c12,02,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1606;
-                ec_SDOwrite(1,0x1c12,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1607;
-                ec_SDOwrite(1,0x1c12,04,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob3); ob3 = 0x04;
-                ec_SDOwrite(1,0x1c12,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1a00;
-                ec_SDOwrite(1,0x1c13,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1a04;
-                ec_SDOwrite(1,0x1c13,02,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1a06;
-                ec_SDOwrite(1,0x1c13,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob3); ob3 = 0x03;
-                ec_SDOwrite(1,0x1c13,00,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                */
             }
             else
             {
@@ -569,6 +164,177 @@ void MainWindow::on_startButton_clicked()
     timer0->start(50);
 
 }
+void MainWindow::Single_SDOWrite(int id)
+{
+    int os;
+    uint32 ob1;
+    int16 ob2;
+    uint8 ob3;
+    int tempi;
+    uint16 tempH,tempL;
+    uint32 tempHH,tempHL,tempLH,tempLL;
+    //clear
+    os=sizeof(ob3); ob3 = 0;
+    ec_SDOwrite(id,0x1c12,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+    os=sizeof(ob3); ob3 = 0;
+    ec_SDOwrite(id,0x1c13,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+    os=sizeof(ob3); ob3 = 0;
+    ec_SDOwrite(id,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??data from twincat is different with wireshark
+    //config
+    os=sizeof(ob1); ob1 = 0x28330010;
+    ec_SDOwrite(id,0x1a06,01,FALSE,os,&ob1,EC_TIMEOUTRXM);
+    os=sizeof(ob1); ob1 = 0x60fd0020;
+    ec_SDOwrite(id,0x1a06,02,FALSE,os,&ob1,EC_TIMEOUTRXM);
+    os=sizeof(ob3); ob3 = 0x02;
+    ec_SDOwrite(id,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??data from twincat is different with wireshark
+    os=sizeof(ob2); ob2 = 0x1600;
+    ec_SDOwrite(id,0x1c12,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1604;
+    ec_SDOwrite(id,0x1c12,02,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1606;
+    ec_SDOwrite(id,0x1c12,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1607;
+    ec_SDOwrite(id,0x1c12,04,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob3); ob3 = 0x04;
+    ec_SDOwrite(id,0x1c12,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1a00;
+    ec_SDOwrite(id,0x1c13,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1a04;
+    ec_SDOwrite(id,0x1c13,02,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1a06;
+    ec_SDOwrite(id,0x1c13,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob3); ob3 = 0x03;
+    ec_SDOwrite(id,0x1c13,00,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    for(tempi=0;tempi<SINGLE_CONGIG_NUM;tempi++)
+    {
+        if(SDODATA1[tempi*4+3] == 4)
+        {
+            tempHH = (SDODATA1[tempi*4+2] & 0x000000ff) << 24;
+            tempHL = (SDODATA1[tempi*4+2] & 0x0000ff00) << 8;
+            tempLH = (SDODATA1[tempi*4+2] & 0x00ff0000) >> 8 ;
+            tempLL = (SDODATA1[tempi*4+2] & 0xff000000) >> 24;
+            SDODATA1[tempi*4+2] = tempHH | tempHL | tempLH | tempLL;
+            os=sizeof(ob1); ob1 = SDODATA1[tempi*4+2];
+            ec_SDOwrite(id,SDODATA1[tempi*4],SDODATA1[tempi*4+1],FALSE,os,&ob1,4*EC_TIMEOUTRXM);
+        }
+        else if(SDODATA1[tempi*4+3] == 2)
+        {
+            tempH = (SDODATA1[tempi*4+2] & 0x00ff) << 8;
+            tempL = (SDODATA1[tempi*4+2] & 0xff00) >> 8;
+            SDODATA1[tempi*4+2] = tempH | tempL;
+            os=sizeof(ob2); ob2 = SDODATA1[tempi*4+2];
+            ec_SDOwrite(id,SDODATA1[tempi*4],SDODATA1[tempi*4+1],FALSE,os,&ob2,4*EC_TIMEOUTRXM);
+        }
+        else if(SDODATA1[tempi*4+3] == 1)
+        {
+            os=sizeof(ob3); ob3 = SDODATA1[tempi*4+2];
+            ec_SDOwrite(id,SDODATA1[tempi*4],SDODATA1[tempi*4+1],FALSE,os,&ob3,4*EC_TIMEOUTRXM);
+        }
+        else
+        {
+            //nothing
+        }
+    }
+}
+void MainWindow::Double_SDOWrite(int id)
+{
+    int os;
+    uint32 ob1;
+    int16 ob2;
+    uint8 ob3;
+    int tempi;
+    uint16 tempH,tempL;
+    uint32 tempHH,tempHL,tempLH,tempLL;
+    //clear sm
+    os=sizeof(ob3); ob3 = 0;
+    ec_SDOwrite(id,0x1c12,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+    os=sizeof(ob3); ob3 = 0;
+    ec_SDOwrite(id,0x1c13,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+    //clear and config axis A
+    os=sizeof(ob3); ob3 = 0;
+    ec_SDOwrite(id,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??
+    os=sizeof(ob1); ob1 = 0x28330010;
+    ec_SDOwrite(id,0x1a06,01,FALSE,os,&ob1,EC_TIMEOUTRXM);
+    os=sizeof(ob1); ob1 = 0x60fd0020;
+    ec_SDOwrite(id,0x1a06,02,FALSE,os,&ob1,EC_TIMEOUTRXM);
+    os=sizeof(ob3); ob3 = 0x02;
+    ec_SDOwrite(id,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??
+    //clear and config axis B
+    os=sizeof(ob3); ob3 = 0;
+    ec_SDOwrite(id,0x1a16,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??
+    os=sizeof(ob1); ob1 = 0x28330010;
+    ec_SDOwrite(id,0x1a16,01,FALSE,os,&ob1,EC_TIMEOUTRXM);
+    os=sizeof(ob1); ob1 = 0x60fd0020;
+    ec_SDOwrite(id,0x1a16,02,FALSE,os,&ob1,EC_TIMEOUTRXM);
+    os=sizeof(ob3); ob3 = 0x02;
+    ec_SDOwrite(id,0x1a16,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??
+    //download pdo 0x1c12
+    os=sizeof(ob2); ob2 = 0x1600;
+    ec_SDOwrite(id,0x1c12,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1604;
+    ec_SDOwrite(id,0x1c12,02,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1606;
+    ec_SDOwrite(id,0x1c12,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1607;
+    ec_SDOwrite(id,0x1c12,04,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1610;
+    ec_SDOwrite(id,0x1c12,05,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1614;
+    ec_SDOwrite(id,0x1c12,06,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1616;
+    ec_SDOwrite(id,0x1c12,07,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1617;
+    ec_SDOwrite(id,0x1c12,8,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob3); ob3 = 0x08;
+    ec_SDOwrite(id,0x1c12,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+    //download pdo 0x1c13
+    os=sizeof(ob2); ob2 = 0x1a00;
+    ec_SDOwrite(id,0x1c13,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1a04;
+    ec_SDOwrite(id,0x1c13,02,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1a06;
+    ec_SDOwrite(id,0x1c13,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1a10;
+    ec_SDOwrite(id,0x1c13,04,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1a14;
+    ec_SDOwrite(id,0x1c13,05,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob2); ob2 = 0x1a16;
+    ec_SDOwrite(id,0x1c13,06,FALSE,os,&ob2,EC_TIMEOUTRXM);
+    os=sizeof(ob3); ob3 = 0x06;
+    ec_SDOwrite(id,0x1c13,00,FALSE,os,&ob2,EC_TIMEOUTRXM);
+
+    for(tempi=0;tempi<DOUBLE_CONGIG_NUM;tempi++)////////////////jaq???
+    {
+        if(SDODATA2[tempi*4+3] == 4)
+        {
+            tempHH = (SDODATA2[tempi*4+2] & 0x000000ff) << 24;
+            tempHL = (SDODATA2[tempi*4+2] & 0x0000ff00) << 8;
+            tempLH = (SDODATA2[tempi*4+2] & 0x00ff0000) >> 8 ;
+            tempLL = (SDODATA2[tempi*4+2] & 0xff000000) >> 24;
+            SDODATA2[tempi*4+2] = tempHH | tempHL | tempLH | tempLL;
+            os=sizeof(ob1); ob1 = SDODATA2[tempi*4+2];
+            ec_SDOwrite(id,SDODATA2[tempi*4],SDODATA2[tempi*4+1],FALSE,os,&ob1,4*EC_TIMEOUTRXM);
+        }
+        else if(SDODATA2[tempi*4+3] == 2)
+        {
+            tempH = (SDODATA2[tempi*4+2] & 0x00ff) << 8;
+            tempL = (SDODATA2[tempi*4+2] & 0xff00) >> 8;
+            SDODATA2[tempi*4+2] = tempH | tempL;
+            os=sizeof(ob2); ob2 = SDODATA2[tempi*4+2];
+            ec_SDOwrite(id,SDODATA2[tempi*4],SDODATA2[tempi*4+1],FALSE,os,&ob2,4*EC_TIMEOUTRXM);
+        }
+        else if(SDODATA2[tempi*4+3] == 1)
+        {
+            os=sizeof(ob3); ob3 = SDODATA2[tempi*4+2];
+            ec_SDOwrite(id,SDODATA2[tempi*4],SDODATA2[tempi*4+1],FALSE,os,&ob3,4*EC_TIMEOUTRXM);
+        }
+        else
+        {
+            //nothing
+        }
+    }
+}
+
 void MainWindow:: UpStatus()
 {
     QString str,sta;

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>EtherCAT Master (SingleMotor)        v1.0</string>
+   <string>EtherCAT Master (DoubleMotor)        v2.0</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QGroupBox" name="groupBox">
@@ -127,7 +127,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -435,6 +435,303 @@
      <attribute name="title">
       <string>Slave2</string>
      </attribute>
+     <widget class="QLabel" name="Stawordlabel_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>30</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>30</y>
+        <width>71</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>StatusWord</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resetButton_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>80</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RESET</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>210</y>
+        <width>71</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Position</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>150</y>
+        <width>71</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="errcodelabel_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>120</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LenzeStalabel_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>60</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>60</y>
+        <width>71</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LenzeStatus</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>90</y>
+        <width>91</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mode of operation</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TorVallabel_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>180</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="reverseButton_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>80</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reverse</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="forwardButton_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>80</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Forward</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MotStalabel_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>90</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>180</y>
+        <width>71</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Posilabel_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>210</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="VelVallabel_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>150</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>120</y>
+        <width>71</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Error code</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="enableButton_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>80</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enable</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
