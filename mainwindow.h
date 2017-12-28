@@ -965,7 +965,7 @@ private:
         int32_t TargetPosi;
         uint16_t PosTorLim;
         uint16_t NegTorLim;
-    }PdoOutput;
+    }PdoOutput,PdoOutput2A,PdoOutput2B;
     typedef struct
     {
         uint16_t StatusWord;
@@ -988,6 +988,40 @@ private:
 
     };
     PdoInput InputData ={
+        0,      //.StatusWord
+        0,      //.LenzeStatus
+        0,      //.ModeStatus
+        0,      //.ErrorCode
+        0,      //.VelValue
+        0,      //.TorValue
+        0       //.PosiValue
+    };
+    PdoOutput OutputData2A = {
+        0,      //.ControlWord
+        0,      //.ModeCmd
+        0,      //.TargetPosi
+        0,      //.PosTorLim
+        0       //.NegTorLim
+
+    };
+    PdoInput InputData2A ={
+        0,      //.StatusWord
+        0,      //.LenzeStatus
+        0,      //.ModeStatus
+        0,      //.ErrorCode
+        0,      //.VelValue
+        0,      //.TorValue
+        0       //.PosiValue
+    };
+    PdoOutput OutputData2B = {
+        0,      //.ControlWord
+        0,      //.ModeCmd
+        0,      //.TargetPosi
+        0,      //.PosTorLim
+        0       //.NegTorLim
+
+    };
+    PdoInput InputData2B ={
         0,      //.StatusWord
         0,      //.LenzeStatus
         0,      //.ModeStatus
