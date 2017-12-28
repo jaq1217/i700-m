@@ -26,8 +26,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp \
+    initxml.cpp \
+    main.cpp \
+    mainwindow.cpp \
     osal/linux/osal.c \
     oshw/linux/nicdrv.c \
     oshw/linux/oshw.c \
@@ -38,11 +39,9 @@ SOURCES += \
     soem/ethercatfoe.c \
     soem/ethercatmain.c \
     soem/ethercatprint.c \
-    soem/ethercatsoe.c \
-    initxml.cpp
+    soem/ethercatsoe.c
 
 HEADERS += \
-        mainwindow.h \
     osal/linux/osal_defs.h \
     osal/osal.h \
     oshw/linux/nicdrv.h \
@@ -57,8 +56,9 @@ HEADERS += \
     soem/ethercatprint.h \
     soem/ethercatsoe.h \
     soem/ethercattype.h \
-    initxml.h
+    initxml.h \
+    mainwindow.h
 
 FORMS += \
-        mainwindow.ui \
-    initxml.ui
+    initxml.ui \
+    mainwindow.ui
