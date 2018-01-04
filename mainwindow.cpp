@@ -83,11 +83,11 @@ void MainWindow::on_startButton_clicked()
             {
                 if(ec_slave[slave].eep_id == SINGLE_CODE)
                 {
-                    //Single_SDOWrite(slave);
+                    Single_SDOWrite(slave);
                 }
                 else if(ec_slave[slave].eep_id == DOUBLE_CODE)
                 {
-                   //Double_SDOWrite(slave);
+                   Double_SDOWrite(slave);
                 }
             }
 
@@ -519,6 +519,7 @@ void MainWindow::Single_SDOWrite(int id)
     ec_SDOwrite(id,0x1c13,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
     os=sizeof(ob3); ob3 = 0x03;
     ec_SDOwrite(id,0x1c13,00,FALSE,os,&ob2,EC_TIMEOUTRXM);
+
     for(tempi=0;tempi<SINGLE_CONGIG_NUM;tempi++)
     {
         if(SDODATA1[tempi*4+3] == 4)
@@ -549,6 +550,7 @@ void MainWindow::Single_SDOWrite(int id)
             //nothing
         }
     }
+
 }
 void MainWindow::Double_SDOWrite(int id)
 {
@@ -1160,22 +1162,22 @@ void MainWindow::Double_SDOWrite(int id)
     ec_SDOwrite(id,0x1c13,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
     //clear and config axis A
     os=sizeof(ob3); ob3 = 0;
-    ec_SDOwrite(id,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??
+    ec_SDOwrite(id,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??clear pdo 0x1a06
     os=sizeof(ob1); ob1 = 0x28330010;
     ec_SDOwrite(id,0x1a06,01,FALSE,os,&ob1,EC_TIMEOUTRXM);
     os=sizeof(ob1); ob1 = 0x60fd0020;
     ec_SDOwrite(id,0x1a06,02,FALSE,os,&ob1,EC_TIMEOUTRXM);
     os=sizeof(ob3); ob3 = 0x02;
-    ec_SDOwrite(id,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??
+    ec_SDOwrite(id,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//?? download pdo 0x1a06 count
     //clear and config axis B
     os=sizeof(ob3); ob3 = 0;
-    ec_SDOwrite(id,0x1a16,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??
-    os=sizeof(ob1); ob1 = 0x28330010;
+    ec_SDOwrite(id,0x1a16,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??clear pdo 0x1a16
+    os=sizeof(ob1); ob1 = 0x30330010;
     ec_SDOwrite(id,0x1a16,01,FALSE,os,&ob1,EC_TIMEOUTRXM);
-    os=sizeof(ob1); ob1 = 0x60fd0020;
+    os=sizeof(ob1); ob1 = 0x68fd0020;
     ec_SDOwrite(id,0x1a16,02,FALSE,os,&ob1,EC_TIMEOUTRXM);
     os=sizeof(ob3); ob3 = 0x02;
-    ec_SDOwrite(id,0x1a16,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??
+    ec_SDOwrite(id,0x1a16,00,FALSE,os,&ob3,EC_TIMEOUTRXM);//??download pdo 0x1a16 count
     //download pdo 0x1c12
     os=sizeof(ob2); ob2 = 0x1600;
     ec_SDOwrite(id,0x1c12,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
@@ -1209,8 +1211,8 @@ void MainWindow::Double_SDOWrite(int id)
     os=sizeof(ob2); ob2 = 0x1a16;
     ec_SDOwrite(id,0x1c13,06,FALSE,os,&ob2,EC_TIMEOUTRXM);
     os=sizeof(ob3); ob3 = 0x06;
-    ec_SDOwrite(id,0x1c13,00,FALSE,os,&ob2,EC_TIMEOUTRXM);
-/*
+    ec_SDOwrite(id,0x1c13,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+
     for(tempi=0;tempi<DOUBLE_CONGIG_NUM;tempi++)////////////////jaq???
     {
         if(SDODATA2[tempi*4+3] == 4)
@@ -1241,7 +1243,8 @@ void MainWindow::Double_SDOWrite(int id)
             //nothing
         }
     }
-*/
+
+
 }
 
 void MainWindow:: UpStatus()
@@ -1321,7 +1324,7 @@ void MainWindow:: UpStatus()
             else if(ec_slave[slave].eep_id == DOUBLE_CODE)
             {
                 //testing jaq
-                OutputData2A.TargetPosi = TargetPosi;//
+                OutputData2A.TargetPosi = TargetPosi2A;//
                 *(ec_slave[slave].outputs) = OutputData2A.ControlWord & 0x00ff;
                 *(ec_slave[slave].outputs + 1 ) = (OutputData2A.ControlWord & 0xff00) >> 8;
                 *(ec_slave[slave].outputs + 4 ) = OutputData2A.ModeCmd;
@@ -1333,7 +1336,7 @@ void MainWindow:: UpStatus()
                 *(ec_slave[slave].outputs + 20 ) = (OutputData2A.PosTorLim & 0xff00) >> 8;
                 *(ec_slave[slave].outputs + 21 ) = OutputData2A.NegTorLim & 0x00ff;
                 *(ec_slave[slave].outputs + 22 ) = (OutputData2A.NegTorLim & 0xff00) >> 8;
-                OutputData2B.TargetPosi = TargetPosi;//
+                OutputData2B.TargetPosi = TargetPosi2B;//
                 *(ec_slave[slave].outputs + 23 ) = OutputData2B.ControlWord & 0x00ff;
                 *(ec_slave[slave].outputs + 24 ) = (OutputData2B.ControlWord & 0xff00) >> 8;
                 *(ec_slave[slave].outputs + 27 ) = OutputData2B.ModeCmd;
@@ -2003,9 +2006,11 @@ void MainWindow::on_resetButton_pressed()
 void MainWindow::on_resetButton_2A_clicked()
 {
     OutputData2A.ControlWord |= 0x0080;
+    OutputData2B.ControlWord |= 0x0080;
 }
 void MainWindow::on_resetButton_2B_clicked()
 {
+    OutputData2B.ControlWord |= 0x0080;
     OutputData2B.ControlWord |= 0x0080;
 }
 void MainWindow::on_resetButton_released()

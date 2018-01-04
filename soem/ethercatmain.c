@@ -790,6 +790,7 @@ int ecx_readstate(ecx_contextt *context)
          }
          context->slavelist[slave].state = rval;
          context->slavelist[0].ALstatuscode |= context->slavelist[slave].ALstatuscode;
+
       }
       fslave = lslave + 1;
    } while(lslave < *(context->slavecount));   
