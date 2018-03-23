@@ -377,6 +377,7 @@ int ecx_SDOwrite(ecx_contextt *context, uint16 Slave, uint16 Index, uint8 SubInd
    ec_clearmbx(&MbxIn);
    /* Empty slave out mailbox if something is in. Timout set to 0 */
    wkc = ecx_mbxreceive(context, Slave, (ec_mbxbuft *)&MbxIn, 0);
+   printf("after ecx_mbxreceive wkc=%d\n\r",wkc);
    ec_clearmbx(&MbxOut);
    aSDOp = (ec_SDOt *)&MbxIn;
    SDOp = (ec_SDOt *)&MbxOut;
@@ -400,6 +401,8 @@ int ecx_SDOwrite(ecx_contextt *context, uint16 Slave, uint16 Index, uint8 SubInd
       memcpy(&SDOp->ldata[0], hp, psize);
       /* send mailbox SDO download request to slave */
       wkc = ecx_mbxsend(context, Slave, (ec_mbxbuft *)&MbxOut, EC_TIMEOUTTXM);
+      printf("after ecx_mbxsend wkc=%d\n\r",wkc);
+
       if (wkc > 0)
       {
          ec_clearmbx(&MbxIn);

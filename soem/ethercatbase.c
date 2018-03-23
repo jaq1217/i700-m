@@ -439,9 +439,11 @@ int ecx_FPWR(ecx_portt *port, uint16 ADP, uint16 ADO, uint16 length, void *data,
 
    idx = ecx_getindex(port);
    ecx_setupdatagram(port, &(port->txbuf[idx]), EC_CMD_FPWR, idx, ADP, ADO, length, data);
+   //printf("in ecx_FPWR port->txbuf[idx]:0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x\n\r ",port->txbuf[idx][0],port->txbuf[idx][1],port->txbuf[idx][2],port->txbuf[idx][3],port->txbuf[idx][4],port->txbuf[idx][5],port->txbuf[idx][6],port->txbuf[idx][7],port->txbuf[idx][8],port->txbuf[idx][9]);
    wkc = ecx_srconfirm(port, idx, timeout);
+   //printf("in ecx_FPWR wkc=%d\n\r",wkc);
    ecx_setbufstat(port, idx, EC_BUF_EMPTY);
-
+   //printf("in ecx_FPWR port->rxbuf[idx]:0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x\n\r ",port->rxbuf[idx][0],port->rxbuf[idx][1],port->rxbuf[idx][2],port->rxbuf[idx][3],port->rxbuf[idx][4],port->rxbuf[idx][5],port->rxbuf[idx][6],port->rxbuf[idx][7],port->rxbuf[idx][8],port->rxbuf[idx][9]);
    return wkc;
 }
 

@@ -955,6 +955,7 @@ int ecx_mbxsend(ecx_contextt *context, uint16 slave,ec_mbxbuft *mbx, int timeout
       else
       {
          wkc = 0;
+         printf("Mailbox full");
       }
    }
 
@@ -992,6 +993,7 @@ int ecx_mbxreceive(ecx_contextt *context, uint16 slave, ec_mbxbuft *mbx, int tim
       {
          SMstat = 0;
          wkc = ecx_FPRD(context->port, configadr, ECT_REG_SM1STAT, sizeof(SMstat), &SMstat, EC_TIMEOUTRET);
+         printf("after ecx_FPRD:wkc=%d\n\r",wkc);
          SMstat = etohs(SMstat);
          if (((SMstat & 0x08) == 0) && (timeout > EC_LOCALDELAY))
          {
@@ -999,7 +1001,7 @@ int ecx_mbxreceive(ecx_contextt *context, uint16 slave, ec_mbxbuft *mbx, int tim
          }
       }
       while (((wkc <= 0) || ((SMstat & 0x08) == 0)) && (osal_timer_is_expired(&timer) == FALSE));
-
+       printf("in ecx_mbxreceive FPRD SM1STAT wkc=%d SMstat=0x%x\n\r",wkc,SMstat);
       if ((wkc > 0) && ((SMstat & 0x08) > 0)) /* read mailbox available ? */
       {
          mbxro = context->slavelist[slave].mbx_ro;
@@ -1007,11 +1009,14 @@ int ecx_mbxreceive(ecx_contextt *context, uint16 slave, ec_mbxbuft *mbx, int tim
          do
          {
             wkc = ecx_FPRD(context->port, configadr, mbxro, mbxl, mbx, EC_TIMEOUTRET); /* get mailbox */
+            printf("after get mailbox wkc=%d mbxtype=0x%x\n\r",wkc,mbxh->mbxtype);
+            //printf("after get mailbox configadr=%d mbxro=%d mbxl=%d\n\r",configadr,mbxro,mbxl);
             if ((wkc > 0) && ((mbxh->mbxtype & 0x0f) == 0x00)) /* Mailbox error response? */
             {
                MBXEp = (ec_mbxerrort *)mbx;
                ecx_mbxerror(context, slave, etohs(MBXEp->Detail));
                wkc = 0; /* prevent emergency to cascade up, it is already handled. */
+               printf("Mailbox error response\n\r");
             }
             else if ((wkc > 0) && ((mbxh->mbxtype & 0x0f) == 0x03)) /* CoE response? */
             {
@@ -1021,6 +1026,11 @@ int ecx_mbxreceive(ecx_contextt *context, uint16 slave, ec_mbxbuft *mbx, int tim
                   ecx_mbxemergencyerror(context, slave, etohs(EMp->ErrorCode), EMp->ErrorReg,
                           EMp->bData, etohs(EMp->w1), etohs(EMp->w2));
                   wkc = 0; /* prevent emergency to cascade up, it is already handled. */
+                  printf("Emergency request\n\r");
+               }
+               else
+               {
+                   printf("Emergency request else\n\r");//jiaqi 2018-3-22
                }
             }
             else
@@ -1044,6 +1054,11 @@ int ecx_mbxreceive(ecx_contextt *context, uint16 slave, ec_mbxbuft *mbx, int tim
                         osal_usleep(EC_LOCALDELAY);
                      }
                   } while (((wkc2 <= 0) || ((SMstat & 0x08) == 0)) && (osal_timer_is_expired(&timer) == FALSE));
+                  printf("read mailbox lost\n\r");
+               }
+               else
+               {
+                   printf("read mailbox lost else\n\r");
                }
             }
          } while ((wkc <= 0) && (osal_timer_is_expired(&timer) == FALSE)); /* if WKC<=0 repeat */
@@ -1051,6 +1066,7 @@ int ecx_mbxreceive(ecx_contextt *context, uint16 slave, ec_mbxbuft *mbx, int tim
       else /* no read mailbox available */
       {
           wkc = 0;
+          printf("no read mailbox available\n\r");
       }
    }
 

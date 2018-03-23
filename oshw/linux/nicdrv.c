@@ -83,6 +83,7 @@
 #include "oshw.h"
 #include "osal/osal.h"
 
+
 /** Redundancy modes */
 enum
 {
@@ -99,7 +100,8 @@ enum
  * differentiate the route the packet traverses through the EtherCAT
  * segment. This is needed to find out the packet flow in redundant
  * configurations. */
-const uint16 priMAC[3] = { 0x0101, 0x0101, 0x0101 };
+//const uint16 priMAC[3] = { 0x0101, 0x0101, 0x0101 };
+const uint16 priMAC[3] = { 0x0008, 0x6000, 0x75a1 };
 /** Secondary source MAC address used for EtherCAT. */
 const uint16 secMAC[3] = { 0x0404, 0x0404, 0x0404 };
 
@@ -234,9 +236,12 @@ void ec_setupheader(void *p)
 {
    ec_etherheadert *bp;
    bp = p;
-   bp->da0 = htons(0xffff);
-   bp->da1 = htons(0xffff);
-   bp->da2 = htons(0xffff);
+ bp->da0 = htons(0xffff);
+ bp->da1 = htons(0xffff);
+ bp->da2 = htons(0xffff);
+//   bp->da0 = htons(0x0101);
+//   bp->da1 = htons(0x0501);
+//   bp->da2 = htons(0x0);
    bp->sa0 = htons(priMAC[0]);
    bp->sa1 = htons(priMAC[1]);
    bp->sa2 = htons(priMAC[2]);
@@ -415,6 +420,7 @@ int ecx_inframe(ecx_portt *port, int idx, int stacknumber)
    }
    rval = EC_NOFRAME;
    rxbuf = &(*stack->rxbuf)[idx];
+  printf("< %d\n\r",(*stack->rxbufstat)[idx]);
    /* check if requested index is already in buffer ? */
    if ((idx < EC_MAXBUF) && ((*stack->rxbufstat)[idx] == EC_BUF_RCVD)) 
    {
@@ -423,10 +429,12 @@ int ecx_inframe(ecx_portt *port, int idx, int stacknumber)
       rval = ((*rxbuf)[l] + ((uint16)(*rxbuf)[l + 1] << 8));
       /* mark as completed */
       (*stack->rxbufstat)[idx] = EC_BUF_COMPLETE;
+      printf("if\n\r");
    }
    else 
    {
-      pthread_mutex_lock(&(port->rx_mutex));
+      //printf("else\n\r");
+       pthread_mutex_lock(&(port->rx_mutex));
       /* non blocking call to retrieve frame from socket */
       if (ecx_recvpkt(port, stacknumber)) 
       {
@@ -498,7 +506,9 @@ static int ecx_waitinframe_red(ecx_portt *port, int idx, osal_timert *timer)
    
    /* if not in redundant mode then always assume secondary is OK */
    if (port->redstate == ECT_RED_NONE)
-      wkc2 = 0;
+       wkc2 = 0;
+
+
    do 
    {
       /* only read frame if not already in */
@@ -513,6 +523,7 @@ static int ecx_waitinframe_red(ecx_portt *port, int idx, osal_timert *timer)
       }   
    /* wait for both frames to arrive or timeout */   
    } while (((wkc <= EC_NOFRAME) || (wkc2 <= EC_NOFRAME)) && !osal_timer_is_expired(timer));
+   //printf("1. ecx_waitinframe_red wkc=%d\n\r",wkc);
    /* only do redundant functions when in redundant mode */
    if (port->redstate != ECT_RED_NONE)
    {
@@ -561,6 +572,7 @@ static int ecx_waitinframe_red(ecx_portt *port, int idx, osal_timert *timer)
       }      
    }
    
+   printf("2. ecx_waitinframe_red wkc=%d\n\r",wkc);
    /* return WKC or EC_NOFRAME */
    return wkc;
 }   
@@ -623,12 +635,12 @@ int ecx_srconfirm(ecx_portt *port, int idx, int timeout)
       wkc = ecx_waitinframe_red(port, idx, &timer2);
    /* wait for answer with WKC>=0 or otherwise retry until timeout */   
    } while ((wkc <= EC_NOFRAME) && !osal_timer_is_expired (&timer1));
+   //printf("in ecx_srconfirm wkc=%d\n\r",wkc);
    /* if nothing received, clear buffer index status so it can be used again */
    if (wkc <= EC_NOFRAME) 
    {
       ecx_setbufstat(port, idx, EC_BUF_EMPTY);
    }
-   
    return wkc;
 }
 
