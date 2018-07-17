@@ -1320,6 +1320,8 @@ void MainWindow:: UpStatus()
                *(ec_slave[slave].outputs + 20 ) = (OutputData.PosTorLim & 0xff00) >> 8;
                *(ec_slave[slave].outputs + 21) = OutputData.NegTorLim & 0x00ff;
                *(ec_slave[slave].outputs + 22 ) = (OutputData.NegTorLim & 0xff00) >> 8;
+                str.sprintf("OutputData.ControlWord=0x%x\n\r",OutputData.ControlWord);
+                ui->infoBrowser->append(str);
             }
             else if(ec_slave[slave].eep_id == DOUBLE_CODE)
             {
@@ -2010,7 +2012,7 @@ void MainWindow::on_resetButton_2A_clicked()
 }
 void MainWindow::on_resetButton_2B_clicked()
 {
-    OutputData2B.ControlWord |= 0x0080;
+    OutputData2A.ControlWord |= 0x0080;
     OutputData2B.ControlWord |= 0x0080;
 }
 void MainWindow::on_resetButton_released()

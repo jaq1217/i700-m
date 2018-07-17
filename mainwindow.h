@@ -80,6 +80,7 @@ private slots:
 
     void on_enableButton_2B_clicked();
 
+
 private:
     Ui::MainWindow *ui;
     QTimer *timer0, *disable_timer, *enable_timer;
