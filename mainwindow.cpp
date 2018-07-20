@@ -1203,8 +1203,7 @@ void MainWindow:: UpStatus()
     int TempData = 0;
     int slave;
     ec_errort Ec;
-    //Count++;
-    //ec_readstate();
+
     if(ec_slave[0].state == EC_STATE_INIT)
     {
         sta.sprintf("Init");
@@ -1268,8 +1267,6 @@ void MainWindow:: UpStatus()
         *(ec_slave[1].outputs + 22 ) = (OutputData.NegTorLim & 0xff00) >> 8;
        //EL2008 output
         *(ec_slave[4].outputs) = 0x48;
-
-
         ui->infoBrowser->append(str);
         ec_send_processdata();
         wkc = ec_receive_processdata(EC_TIMEOUTRET);
