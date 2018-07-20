@@ -1251,7 +1251,7 @@ void MainWindow:: UpStatus()
     }
     if(SendPdo && ec_slave[0].state == EC_STATE_OPERATIONAL)
     {
-        //i700-single,EK1100,EL1008,EL2008
+        //i700-single ,ECATDIO-I16-O16
         //i700
         OutputData.TargetPosi = TargetPosi;
         *(ec_slave[1].outputs) = OutputData.ControlWord & 0x00ff;
@@ -1267,6 +1267,11 @@ void MainWindow:: UpStatus()
         *(ec_slave[1].outputs + 22 ) = (OutputData.NegTorLim & 0xff00) >> 8;
        //EL2008 output
         *(ec_slave[4].outputs) = 0x48;
+
+//        //ECATDIO-I16-O16
+//        *(ec_slave[2].outputs) = 0xaa;
+//        *(ec_slave[2].outputs +1) = 0xbb;
+
         ui->infoBrowser->append(str);
         ec_send_processdata();
         wkc = ec_receive_processdata(EC_TIMEOUTRET);
@@ -1323,9 +1328,15 @@ void MainWindow:: UpStatus()
         ui->TorVallabel->setText(str);//Torque actual value
         str.sprintf("%d",InputData.PosiValue);
         ui->Posilabel->setText(str);//position actual value
-        //EL1008
-        str.sprintf("EL1008 input i:0x%x:",*(ec_slave[3].inputs));
+        //EL1008 input
+        str.sprintf("Beckhoff input L:0x%x:",*(ec_slave[3].inputs));
         ui->infoBrowser->append(str);
+
+//        //ECATDIO-I16-O16
+//        str.sprintf("ECATDIO-I16-O16 input L:0x%x:",*(ec_slave[2].inputs));
+//        ui->infoBrowser->append(str);
+//        str.sprintf("ECATDIO-I16-O16 input H:0x%x:",*(ec_slave[2].inputs + 1));
+//        ui->infoBrowser->append(str);
 
     }
 
