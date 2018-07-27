@@ -174,9 +174,12 @@ void MainWindow::on_startButton_clicked()
             os=sizeof(ob2); ob2 = 0x1a01;
             ec_SDOwrite(1,0x1c13,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
             os=sizeof(ob3); ob3 = 0x01;
-            ec_SDOwrite(1,0x1c13,00,FALSE,os,&ob2,EC_TIMEOUTRXM);
+            ec_SDOwrite(1,0x1c13,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
 
-
+            os=sizeof(ob1);
+            ec_SDOread(1,0x6064,00,FALSE,&os,&ob1,EC_TIMEOUTRXM);
+            str.sprintf("Position1:%d",ob1);
+            ui->infoBrowser->append(str);
 
             ///////////////////
             ec_config_map(&IOmap);
@@ -270,6 +273,8 @@ void MainWindow:: UpStatus()
     QString str,sta;
     int p,psize,oloop,iloop,expectedWKC,Tempj,wkc;
     int TempData = 0;
+    int os;
+    uint32 ob1;
     ec_errort Ec;
     Count++;
     //ec_readstate();
@@ -367,8 +372,10 @@ void MainWindow:: UpStatus()
 //        ui->TorVallabel->setText(str);//Torque actual value
         str.sprintf("%d",InputData.PosiValue);
         ui->Posilabel->setText(str);//position actual value
-
-
+        os=sizeof(ob1);
+        ec_SDOread(1,0x6064,00,FALSE,&os,&ob1,EC_TIMEOUTRXM);
+        str.sprintf("Position:%d",ob1);
+        ui->infoBrowser->append(str);
     }
 
 }
