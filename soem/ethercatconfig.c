@@ -686,7 +686,7 @@ static int ecx_map_coe_soe(ecx_contextt *context, uint16 slave)
          if (!rval) /* CA not available or not succeeded */
          {
             /* read PDO mapping via CoE */
-            rval = ecx_readPDOmap(context, slave, &Osize, &Isize);
+            rval = ecx_readPDOmap(context, slave, &Osize, &Isize);//jiaqi 2018-7-26
          }
          EC_PRINT("  CoE Osize:%d Isize:%d\n", Osize, Isize);
       }
@@ -901,7 +901,7 @@ int ecx_config_map_group(ecx_contextt *context, void *pIOmap, uint8 group)
                ecx_mapt[thrn].context = context;
                ecx_mapt[thrn].slave = slave;
                ecx_mapt[thrn].running = 1;
-               osal_thread_create(&(ecx_threadh[thrn]), 128000, 
+               osal_thread_create(&(ecx_threadh[thrn]), 128000,
                   &ecx_mapper_thread, &(ecx_mapt[thrn]));
             }
          }

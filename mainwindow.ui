@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>EtherCAT Master (SingleMotor)        v1.0</string>
+   <string>EtherCAT Master (JSDG2S)        v1.0</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QGroupBox" name="groupBox">
@@ -158,6 +158,9 @@
       <property name="text">
        <string>Forward</string>
       </property>
+      <property name="shortcut">
+       <string>F1</string>
+      </property>
      </widget>
      <widget class="QPushButton" name="reverseButton">
       <property name="geometry">
@@ -170,6 +173,9 @@
       </property>
       <property name="text">
        <string>Reverse</string>
+      </property>
+      <property name="shortcut">
+       <string>F2</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_5">
