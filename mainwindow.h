@@ -70,7 +70,7 @@ private:
     typedef struct
     {
         uint16_t ControlWord;
-        uint8_t ModeCmd;
+        uint16_t ModeCmd;
         int32_t TargetPosi;
         uint16_t PosTorLim;
         uint16_t NegTorLim;
@@ -79,7 +79,7 @@ private:
     {
         uint16_t StatusWord;
         uint16_t LenzeStatus;
-        uint8_t ModeStatus;
+        uint16_t ModeStatus;
         uint16_t ErrorCode;
         int32_t VelValue;
         int16_t TorValue;
