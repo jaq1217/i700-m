@@ -151,6 +151,7 @@ ecx_contextt  ecx_context = {
     0,               // .DCtO          =
     0,               // .DCl           =
     &ec_DCtime,      // .DCtime        =
+    0,               // .BRD0          = //by jiaqi 2018-3-27
     &ec_SMcommtype,  // .SMcommtype    =
     &ec_PDOassign,   // .PDOassign     =
     &ec_PDOdesc,     // .PDOdesc       =
@@ -1872,6 +1873,8 @@ int ecx_send_processdata_group(ecx_contextt *context, uint8 group)
                                         ECT_REG_DCSYSTIME, sizeof(int64), context->DCtime);
                first = FALSE;
             }
+            //jiaqi 2018-8-17
+//            context->BRD0 = ecx_adddatagram(context->port, &(context->port->txbuf[idx]), EC_CMD_BRD, idx, FALSE,0,ECT_REG_ALSTAT, length, data);
             /* send frame */
             ecx_outframe_red(context->port, idx);
             /* push index and data pointer on stack */
@@ -1902,6 +1905,7 @@ int ecx_receive_processdata_group(ecx_contextt *context, uint8 group, int timeou
    static int wkc2 = 0;
    uint16 le_wkc = 0;
    int64 le_DCtime;
+   uint16 temp = 0;//jiaqi 2018-3-27
    static boolean first = FALSE;
 
    if(context->grouplist[group].hasdc)
@@ -1928,6 +1932,8 @@ int ecx_receive_processdata_group(ecx_contextt *context, uint8 group, int timeou
                memcpy(&le_DCtime, &(context->port->rxbuf[idx][context->DCtO]), sizeof(le_DCtime));
                *(context->DCtime) = etohll(le_DCtime);
                first = FALSE;
+//               memcpy(&temp, &(context->port->rxbuf[idx][context->BRD0]), sizeof(temp));//jiaqi 2018-3-27
+//               context->slavelist[0].state = temp;
             }
             else
             {

@@ -450,6 +450,7 @@ typedef struct
    uint16         DCl;
    /** reference to last DC time from slaves */
    int64          *DCtime;
+   uint16         BRD0;//jiaqi 2018-8-17
    /** internal, SM buffer */
    ec_SMcommtypet *SMcommtype;
    /** internal, PDO assign list */

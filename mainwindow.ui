@@ -127,7 +127,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -158,6 +158,9 @@
       <property name="text">
        <string>Forward</string>
       </property>
+      <property name="shortcut">
+       <string>F2</string>
+      </property>
      </widget>
      <widget class="QPushButton" name="reverseButton">
       <property name="geometry">
@@ -170,6 +173,9 @@
       </property>
       <property name="text">
        <string>Reverse</string>
+      </property>
+      <property name="shortcut">
+       <string>F3</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_5">
