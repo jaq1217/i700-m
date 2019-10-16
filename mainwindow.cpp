@@ -162,77 +162,79 @@ void MainWindow::on_startButton_clicked()
             /////////////
             printf("SDO send:\n\r");
             //clear
-            os=sizeof(ob3); ob3 = 0;
+            os=sizeof(ob3); ob3 = 0x00;
             ec_SDOwrite(1,0x1c12,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
-            os=sizeof(ob3); ob3 = 0;
+            os=sizeof(ob3); ob3 = 0x00;
             ec_SDOwrite(1,0x1c13,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
-            os=sizeof(ob3); ob3 = 0;
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1a00,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob1); ob1 = 0x60410010;
+            ec_SDOwrite(1,0x1a00,01,FALSE,os,&ob1,EC_TIMEOUTRXM);
+            os=sizeof(ob1); ob1 = 0x60610008;
+            ec_SDOwrite(1,0x1a00,02,FALSE,os,&ob1,EC_TIMEOUTRXM);
+            os=sizeof(ob1); ob1 = 0x603f0010;
+            ec_SDOwrite(1,0x1a00,03,FALSE,os,&ob1,EC_TIMEOUTRXM);
+            os=sizeof(ob1); ob1 = 0x606c0020;
+            ec_SDOwrite(1,0x1a00,04,FALSE,os,&ob1,EC_TIMEOUTRXM);
+            os=sizeof(ob1); ob1 = 0x60770010;
+            ec_SDOwrite(1,0x1a00,05,FALSE,os,&ob1,EC_TIMEOUTRXM);
+            os=sizeof(ob1); ob1 = 0x60640020;
+            ec_SDOwrite(1,0x1a00,06,FALSE,os,&ob1,EC_TIMEOUTRXM);
+            os=sizeof(ob1); ob1 = 0x60f40020;
+            ec_SDOwrite(1,0x1a00,07,FALSE,os,&ob1,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x07;
+            ec_SDOwrite(1,0x1a00,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1a01,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1a02,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1a03,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1a04,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1a05,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
             ec_SDOwrite(1,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
-            //config
-            os=sizeof(ob1); ob1 = 0x28330010;
-            ec_SDOwrite(1,0x1a06,01,FALSE,os,&ob1,EC_TIMEOUTRXM);
-            os=sizeof(ob1); ob1 = 0x60fd0020;
-            ec_SDOwrite(1,0x1a06,02,FALSE,os,&ob1,EC_TIMEOUTRXM);
-            os=sizeof(ob3); ob3 = 0x02;
-            ec_SDOwrite(1,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1a07,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1600,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob1); ob1 = 0x60400010;
+            ec_SDOwrite(1,0x1600,01,FALSE,os,&ob1,EC_TIMEOUTRXM);
+            os=sizeof(ob1); ob1 = 0x60600008;
+            ec_SDOwrite(1,0x1600,02,FALSE,os,&ob1,EC_TIMEOUTRXM);
+            os=sizeof(ob1); ob1 = 0x607a0020;
+            ec_SDOwrite(1,0x1600,03,FALSE,os,&ob1,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x03;
+            ec_SDOwrite(1,0x1600,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1601,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1602,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1603,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1604,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1605,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1606,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+            os=sizeof(ob3); ob3 = 0x00;
+            ec_SDOwrite(1,0x1607,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
+
             os=sizeof(ob2); ob2 = 0x1600;
             ec_SDOwrite(1,0x1c12,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob2); ob2 = 0x1604;
-            ec_SDOwrite(1,0x1c12,02,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob2); ob2 = 0x1606;
-            ec_SDOwrite(1,0x1c12,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob2); ob2 = 0x1607;
-            ec_SDOwrite(1,0x1c12,04,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob3); ob3 = 0x04;
+            os=sizeof(ob3); ob3 = 0x01;
             ec_SDOwrite(1,0x1c12,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
             os=sizeof(ob2); ob2 = 0x1a00;
             ec_SDOwrite(1,0x1c13,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob2); ob2 = 0x1a04;
-            ec_SDOwrite(1,0x1c13,02,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob2); ob2 = 0x1a06;
-            ec_SDOwrite(1,0x1c13,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            os=sizeof(ob3); ob3 = 0x03;
-            ec_SDOwrite(1,0x1c13,00,FALSE,os,&ob2,EC_TIMEOUTRXM);
-            printf("SDO end:\n\r");
-            //    4337,2,0x14000000,4,
-            for(tempi=0;tempi<80;tempi++)
-            {
-                if(SDODATA[tempi*4+3] == 4)
-                {
-                    tempHH = (SDODATA[tempi*4+2] & 0x000000ff) << 24;
-                    tempHL = (SDODATA[tempi*4+2] & 0x0000ff00) << 8;
-                    tempLH = (SDODATA[tempi*4+2] & 0x00ff0000) >> 8 ;
-                    tempLL = (SDODATA[tempi*4+2] & 0xff000000) >> 24;
-                    SDODATA[tempi*4+2] = tempHH | tempHL | tempLH | tempLL;
-                    os=sizeof(ob1); ob1 = SDODATA[tempi*4+2];
-                    ec_SDOwrite(1,SDODATA[tempi*4],SDODATA[tempi*4+1],FALSE,os,&ob1,4*EC_TIMEOUTRXM);
-                }
-                else if(SDODATA[tempi*4+3] == 2)
-                {
-                    tempH = (SDODATA[tempi*4+2] & 0x00ff) << 8;
-                    tempL = (SDODATA[tempi*4+2] & 0xff00) >> 8;
-                    SDODATA[tempi*4+2] = tempH | tempL;
-                    os=sizeof(ob2); ob2 = SDODATA[tempi*4+2];
-                    ec_SDOwrite(1,SDODATA[tempi*4],SDODATA[tempi*4+1],FALSE,os,&ob2,4*EC_TIMEOUTRXM);
-                }
-                else if(SDODATA[tempi*4+3] == 1)
-                {
-                    os=sizeof(ob3); ob3 = SDODATA[tempi*4+2];
-                    ec_SDOwrite(1,SDODATA[tempi*4],SDODATA[tempi*4+1],FALSE,os,&ob3,4*EC_TIMEOUTRXM);
-                }
-                else
-                {
-                    //nothing
-                }
-            }
-            ///////////////////
+            os=sizeof(ob3); ob3 = 0x01;
+            ec_SDOwrite(1,0x1c13,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
             ec_config_map(&IOmap);
             ec_configdc();
-
             //sdo resqust
-
-
-
             str.sprintf("Name:%s",ec_slave[1].name);
             ui->infoBrowser->append(str);
             str.sprintf("Vender ID:%8.8x",ec_slave[1].eep_man);
@@ -300,56 +302,7 @@ void MainWindow::on_startButton_clicked()
                 str.sprintf("////////////OP State///////////////");
                 ui->infoBrowser->append(str);
                 SendPdo = true;
-                /*read sdo  motor param
-                mos=sizeof(mod);
-                ec_SDOread(1, 0x1c12, 02,FALSE, &mos,&mod, EC_TIMEOUTRXM);
-                str.sprintf("0x1c12.02:%x",mod);
-                ui->infoBrowser->append(str);
-                ec_SDOread(1, 0x1c13, 02,FALSE, &mos,&mod, EC_TIMEOUTRXM);
-                str.sprintf("0x1c13.02:%x",mod);
-                ui->infoBrowser->append(str);
-                os=sizeof(ob2);
-                ec_SDOread(1, 0x6072, 00,FALSE, &os,&ob2, EC_TIMEOUTRXM);
-                str.sprintf("0x6072.0:%x",ob2);
-                ui->infoBrowser->append(str);
 
-                os=sizeof(ob3);
-                ec_SDOread(1, 0x2d49, 02,FALSE, &os,&ob3, EC_TIMEOUTRXM);
-                str.sprintf("0x2d49.2:%d",ob3);
-                ui->infoBrowser->append(str);
-                os=sizeof(ob2);
-                ec_SDOread(1, 0x2d49, 03,FALSE, &os,&ob2, EC_TIMEOUTRXM);
-                str.sprintf("0x2d49.3:%d",ob2);
-                ui->infoBrowser->append(str);
-                os=sizeof(ob2);
-                ec_SDOread(1, 0x2d49, 04,FALSE, &os,&ob2, EC_TIMEOUTRXM);
-                str.sprintf("0x2d49.4:%d",ob2);
-                ui->infoBrowser->append(str);
-                os=sizeof(ob1); ob1 = 0x28330010;
-                ec_SDOwrite(1,0x1a06,01,FALSE,os,&ob1,EC_TIMEOUTRXM);
-                os=sizeof(ob1); ob1 = 0x60fd0020;
-                ec_SDOwrite(1,0x1a06,02,FALSE,os,&ob1,EC_TIMEOUTRXM);
-                os=sizeof(ob3); ob3 = 0x02;
-                ec_SDOwrite(1,0x1a06,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1600;
-                ec_SDOwrite(1,0x1c12,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1604;
-                ec_SDOwrite(1,0x1c12,02,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1606;
-                ec_SDOwrite(1,0x1c12,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1607;
-                ec_SDOwrite(1,0x1c12,04,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob3); ob3 = 0x04;
-                ec_SDOwrite(1,0x1c12,00,FALSE,os,&ob3,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1a00;
-                ec_SDOwrite(1,0x1c13,01,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1a04;
-                ec_SDOwrite(1,0x1c13,02,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob2); ob2 = 0x1a06;
-                ec_SDOwrite(1,0x1c13,03,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                os=sizeof(ob3); ob3 = 0x03;
-                ec_SDOwrite(1,0x1c13,00,FALSE,os,&ob2,EC_TIMEOUTRXM);
-                */
             }
             else
             {
@@ -359,7 +312,7 @@ void MainWindow::on_startButton_clicked()
 
         }
     }
-    timer0->start(50);
+    timer0->start(5);
 
 }
 void MainWindow:: UpStatus()
@@ -418,17 +371,14 @@ void MainWindow:: UpStatus()
     if(SendPdo && ec_slave[1].state == EC_STATE_OPERATIONAL)
     {
          OutputData.TargetPosi = TargetPosi;
+         OutputData.ModeCmd = 8;
         *(ec_slave[1].outputs) = OutputData.ControlWord & 0x00ff;
         *(ec_slave[1].outputs + 1 ) = (OutputData.ControlWord & 0xff00) >> 8;
-        *(ec_slave[1].outputs + 4 ) = OutputData.ModeCmd;
-        *(ec_slave[1].outputs + 7 ) = OutputData.TargetPosi & 0x000000ff;
-        *(ec_slave[1].outputs + 8 ) = (OutputData.TargetPosi & 0x0000ff00) >> 8;
-        *(ec_slave[1].outputs + 9 ) = (OutputData.TargetPosi & 0x00ff0000) >> 16;
-        *(ec_slave[1].outputs + 10 ) = (OutputData.TargetPosi & 0xff000000) >> 24;
-        *(ec_slave[1].outputs + 19) = OutputData.PosTorLim & 0x00ff;
-        *(ec_slave[1].outputs + 20 ) = (OutputData.PosTorLim & 0xff00) >> 8;
-        *(ec_slave[1].outputs + 21) = OutputData.NegTorLim & 0x00ff;
-        *(ec_slave[1].outputs + 22 ) = (OutputData.NegTorLim & 0xff00) >> 8;
+        *(ec_slave[1].outputs + 2 ) = OutputData.ModeCmd;
+        *(ec_slave[1].outputs + 3 ) = OutputData.TargetPosi & 0x000000ff;
+        *(ec_slave[1].outputs + 4 ) = (OutputData.TargetPosi & 0x0000ff00) >> 8;
+        *(ec_slave[1].outputs + 5 ) = (OutputData.TargetPosi & 0x00ff0000) >> 16;
+        *(ec_slave[1].outputs + 6 ) = (OutputData.TargetPosi & 0xff000000) >> 24;
         ec_send_processdata();
         wkc = ec_receive_processdata(EC_TIMEOUTRET);
         expectedWKC = (ec_group[0].outputsWKC * 2) + ec_group[0].inputsWKC;
@@ -437,7 +387,6 @@ void MainWindow:: UpStatus()
         //ui->infoBrowser->append(str);
 
         InputData.StatusWord = 0x0000;
-        InputData.LenzeStatus = 0x0000;
         InputData.ModeStatus = 0x00;
         InputData.ErrorCode = 0x0000;
         InputData.VelValue = 0x00000000;
@@ -446,31 +395,28 @@ void MainWindow:: UpStatus()
         InputData.StatusWord = *(ec_slave[1].inputs+1);
         InputData.StatusWord <<= 8;
         InputData.StatusWord |= *(ec_slave[1].inputs);
-        InputData.LenzeStatus = *(ec_slave[1].inputs+3);
-        InputData.LenzeStatus <<= 8;
-        InputData.LenzeStatus |= *(ec_slave[1].inputs+2);
-        InputData.ModeStatus = *(ec_slave[1].inputs + 4);
-        InputData.ErrorCode = *(ec_slave[1].inputs + 6);
+        InputData.ModeStatus = *(ec_slave[1].inputs + 2);
+        InputData.ErrorCode = *(ec_slave[1].inputs + 4);
         InputData.ErrorCode <<= 8;
-        InputData.ErrorCode |= *(ec_slave[1].inputs + 5);
-        InputData.VelValue |= *(ec_slave[1].inputs+10);
-        InputData.VelValue <<= 8;
-        InputData.VelValue |= *(ec_slave[1].inputs+9);
-        InputData.VelValue <<= 8;
+        InputData.ErrorCode |= *(ec_slave[1].inputs + 3);
         InputData.VelValue |= *(ec_slave[1].inputs+8);
         InputData.VelValue <<= 8;
         InputData.VelValue |= *(ec_slave[1].inputs+7);
+        InputData.VelValue <<= 8;
+        InputData.VelValue |= *(ec_slave[1].inputs+6);
+        InputData.VelValue <<= 8;
+        InputData.VelValue |= *(ec_slave[1].inputs+5);
         InputData.TorValue = 0;
-        InputData.TorValue |= *(ec_slave[1].inputs+12);
+        InputData.TorValue |= *(ec_slave[1].inputs+10);
         InputData.TorValue <<= 8;
-        InputData.TorValue |= *(ec_slave[1].inputs+11);
-        InputData.PosiValue |= *(ec_slave[1].inputs+16);
-        InputData.PosiValue <<= 8;
-        InputData.PosiValue |= *(ec_slave[1].inputs+15);
-        InputData.PosiValue <<= 8;
+        InputData.TorValue |= *(ec_slave[1].inputs+9);
         InputData.PosiValue |= *(ec_slave[1].inputs+14);
         InputData.PosiValue <<= 8;
         InputData.PosiValue |= *(ec_slave[1].inputs+13);
+        InputData.PosiValue <<= 8;
+        InputData.PosiValue |= *(ec_slave[1].inputs+12);
+        InputData.PosiValue <<= 8;
+        InputData.PosiValue |= *(ec_slave[1].inputs+11);
 
         str.sprintf("0x%04x",InputData.StatusWord);
         ui->Stawordlabel->setText(str);//status word
@@ -664,7 +610,7 @@ void MainWindow::enable_motion_thread()
             OutputData.ControlWord |= 0x0006;
             OutputData.NegTorLim = 100;
             OutputData.PosTorLim = 100;
-            OutputData.ModeCmd = 8;
+            //OutputData.ModeCmd = 8;
             TargetPosi = InputData.PosiValue;
             //TargetPosi = 0x0000;
             OutputData.TargetPosi = TargetPosi;
@@ -718,7 +664,7 @@ void MainWindow::disable_motion_thread()
 
 void MainWindow::on_forwardButton_clicked()
 {
-    TargetPosi += 10000;
+    TargetPosi += 1000;
 
 
 }
@@ -735,7 +681,7 @@ void MainWindow::on_resetButton_released()
 
 void MainWindow::on_reverseButton_clicked()
 {
-    TargetPosi -= 10000;
+    TargetPosi -= 1000;
 }
 
 void MainWindow::on_resetButton_clicked()
